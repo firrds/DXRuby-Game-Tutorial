@@ -137,11 +137,14 @@ end
 最初からデータを入れた状態で宣言する事も出来ます。
 
 ```ruby
-array = [1, "test"]
+foo = "ABC"
+test = "DEF"
+array1 = [foo,test,"Hello"]
 
-print(array)    #=> [1, "test"]
-print(array[0]) #=> 1
-print(array[1]) #=> test
+print(array1)    #=> ["ABC","DEF","Hello"]
+print(array[0]) #=> "ABC"
+print(array[1]) #=> "DEF"
+print(array[0]) #=> "Hello"
 ```
 
 この様な記述の方法を使う事で、
