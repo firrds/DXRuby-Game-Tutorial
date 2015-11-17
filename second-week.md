@@ -139,12 +139,12 @@ end
 ```ruby
 foo = "ABC"
 test = "DEF"
-array1 = [foo,test,"Hello"]
+arraytest = [foo,test,"Hello"]
 
-print(array1)    #=> ["ABC","DEF","Hello"]
-print(array[0]) #=> "ABC"
-print(array[1]) #=> "DEF"
-print(array[0]) #=> "Hello"
+print(arraytest)    #=> ["ABC","DEF","Hello"]
+print(arraytest[0]) #=> "ABC"
+print(arraytest[1]) #=> "DEF"
+print(arraytest[2]) #=> "Hello"
 ```
 
 この様な記述の方法を使う事で、
