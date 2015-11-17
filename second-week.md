@@ -141,10 +141,13 @@ foo = "ABC"
 test = "DEF"
 arraytest = [foo,test,"Hello"]
 
-print(arraytest)    #=> ["ABC","DEF","Hello"]
+# arraytestという配列の中にある個別のデータを出す時は[0]のように番号を指定すればいいです。
 print(arraytest[0]) #=> "ABC"
 print(arraytest[1]) #=> "DEF"
 print(arraytest[2]) #=> "Hello"
+
+# arraytestという配列にあるすべてのデータを一気に出す場合は配列名だけでいいです。
+print(arraytest)    #=> ["ABC","DEF","Hello"]
 ```
 
 この様な記述の方法を使う事で、
