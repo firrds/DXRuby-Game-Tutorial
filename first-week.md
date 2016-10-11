@@ -6,6 +6,9 @@
 - [Programming について](./about-programming.md)
 - [Ruby について](./about-ruby.md)
 
+-[教材ダウンロード](https://drive.google.com/file/d/0B8M7bkByTfhFWDVNV3R3bUxvRzA/view?usp=sharing)
+
+
 ## DXRuby について
 
 ゲームを作成するには様々なツール (道具) があります。
