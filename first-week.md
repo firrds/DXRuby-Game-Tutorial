@@ -162,6 +162,24 @@ sample_sprite の増加値を変えると移動速度が変わる事も確認し
 sprite が画面の左端から外に出ない様にして下さい。
 画面の左端は X 軸の 0 です。
 
+ヒント：
+if文を使います。
+
+さらにヒント：
+sample_sprite.x-=1するときのif文の条件を考えましょう。
+
+さらにヒント：
+上記の例だと、if文でsample_sprite.xが0より左に進まないようにするには？
+
+さらにヒント：
+```ruby
+if sample_sprite.x > 0
+  sample_sprite.x -= 1
+end
+```
+ここで注意：if文で、sample_sprite.x > 0を条件としています。
+もし、sample_sprite.x >= 0を条件とするとsample_sprite.x -= 1はどういう値になるでしょうか？
+sample_sprite.xは-1になってしまいます。if文の条件に注意しましょう。
 
 ## DXRuby でゲーム作成
 
