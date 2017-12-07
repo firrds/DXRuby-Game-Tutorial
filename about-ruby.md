@@ -304,13 +304,13 @@ array[9]=10
 さらにヒント：
 ```ruby
 count=0
-loop文
+loop do
 　array[count]=count+1
 　count = count + 1
 end
 ```
 
-これを10回繰り返すと・・・？
+これを10回繰り返すには・・・？
 
 さらにヒント：
 loop文の繰り返しを抜けるには、条件が必要です。
