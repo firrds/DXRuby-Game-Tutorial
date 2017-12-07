@@ -244,6 +244,27 @@ end
 矢印キーを使って、
 上下左右に移動出来る様にプログラムを作成して下さい。
 
+ヒント：
+
+```ruby
+  if Input.keyDown?(キー)
+   ここに入れるコードは以下参照
+  end
+```
+
+■ 右に進む場合
+ sample_sprite.x += 1
+
+■ 左に進む場合
+ sample_sprite.x -= 1
+
+■ 上に進む場合
+ sample_sprite.y -= 1
+
+■ 下に進む場合
+ sample_sprite.y += 1
+
+
 ### 衝突判定
 
 衝突判定とは、
