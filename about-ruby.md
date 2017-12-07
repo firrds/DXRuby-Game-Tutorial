@@ -309,7 +309,8 @@ array[count]=count+1
 さらにヒント：
 loop文の繰り返しを抜けるには、条件が必要です。
 
+さらにヒント：
 上記ヒントの場合、countが10になったら、ループを抜けるように実装します。
-countが9のとき、array[count]=count+1を実行する前にloop文を抜けてはいけませんよ。
+countが9のとき、array[count]=count+1を実行する前にloop文を抜けてはいけません。
 なぜならcountが9のとき、array[count]=count+1を実行する前にloop文を抜けたら、
-array[8]=9でloop文を抜けることになり、array[9]=10は実行されません。
+array[8]=9でloop文を抜けることになり、array[9]=10は実行されないからです。
