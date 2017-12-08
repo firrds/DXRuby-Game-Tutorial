@@ -122,6 +122,9 @@ image では何の画像か分かり辛いので、
 
 ![_ 1_4](https://user-images.githubusercontent.com/19345982/33780767-4a6cf73c-dc95-11e7-89d7-236b3c8bfd0d.jpg)
 
+※　loopで写真を描くと、静止画はもちろん、工夫すれば、アニメーションが出来ます。コマ送りのイメージです。
+![_ 1](https://user-images.githubusercontent.com/19345982/33782010-341d13c2-dc9a-11e7-8c10-78fef56127ed.png)
+![_ 1](https://user-images.githubusercontent.com/19345982/33782036-58fd6fca-dc9a-11e7-90c1-f7a978681a33.png)
 
 ### Sprite データの処理 (画像データの画面内移動)
 
