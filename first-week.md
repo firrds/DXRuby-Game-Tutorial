@@ -110,6 +110,14 @@ image では何の画像か分かり辛いので、
 サンプルでは、どの様な物として扱うのかを分かり易くする為に、
 一般的な名前を使用しています。
 
+※ 写真の分割について以下に図で説明します。
+![_ 1](https://user-images.githubusercontent.com/19345982/33779626-027b0454-dc91-11e7-84b4-acbdd4456dbd.jpg)
+![_ 2](https://user-images.githubusercontent.com/19345982/33779647-17ad1178-dc91-11e7-8f4b-c09430270a2f.jpg)
+　image = Image.load_tiles("../character.png", 数字1,数字2)の数字1、数字2のの部分をいろいろかえてみましょう。
+![_ 3](https://user-images.githubusercontent.com/19345982/33779675-2ed3a948-dc91-11e7-8949-45752c0bfe1d.jpg)
+![_ 4](https://user-images.githubusercontent.com/19345982/33779686-3c4a3e02-dc91-11e7-95c5-7e0953492cda.jpg)
+
+
 ### Sprite データの処理 (画像データの画面内移動)
 
 Sprite データは x, y という二つの座標データを持っています。
