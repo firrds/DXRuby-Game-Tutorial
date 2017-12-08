@@ -111,11 +111,11 @@ image では何の画像か分かり辛いので、
 一般的な名前を使用しています。
 
 ※ 写真の分割について以下に図で説明します。
-![_ 1](https://user-images.githubusercontent.com/19345982/33779626-027b0454-dc91-11e7-84b4-acbdd4456dbd.jpg)
-![_ 2](https://user-images.githubusercontent.com/19345982/33779647-17ad1178-dc91-11e7-8f4b-c09430270a2f.jpg)
+![_ 1_1](https://user-images.githubusercontent.com/19345982/33780700-06fee280-dc95-11e7-94c6-eb370aadae3a.jpg)
+![_ 1_2](https://user-images.githubusercontent.com/19345982/33780720-170ed072-dc95-11e7-9fa3-31ddf38331de.jpg)
 　image = Image.load_tiles("../character.png", 数字1,数字2)の数字1、数字2のの部分をいろいろかえてみましょう。
-![_ 3](https://user-images.githubusercontent.com/19345982/33779675-2ed3a948-dc91-11e7-8949-45752c0bfe1d.jpg)
-![_ 4](https://user-images.githubusercontent.com/19345982/33779686-3c4a3e02-dc91-11e7-95c5-7e0953492cda.jpg)
+![_ 1_3](https://user-images.githubusercontent.com/19345982/33780729-23908c32-dc95-11e7-89e4-930e1e5a06dd.jpg)
+![_ 1_4](https://user-images.githubusercontent.com/19345982/33780767-4a6cf73c-dc95-11e7-89d7-236b3c8bfd0d.jpg)
 
 
 ### Sprite データの処理 (画像データの画面内移動)
@@ -271,7 +271,8 @@ end
 
 ■ 下に進む場合
  sample_sprite.y += 1
-
+ 
+![_ 1](https://user-images.githubusercontent.com/19345982/33780879-b78291a6-dc95-11e7-9370-cb963d267ae9.png)
 
 ### 衝突判定
 
