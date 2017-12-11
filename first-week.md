@@ -65,6 +65,16 @@ image_array = Image.load_tiles("filepath", xcount, ycount)
 実際に画像を表示する為には、その為の命令を Window.loop do ... end
 の中に記述する必要があります。
 
+絶対パス・相対パスについての説明を以下に図で示します。
+
+![1_1](https://user-images.githubusercontent.com/19345982/33853130-35f7302a-df00-11e7-9a90-4ff621e05843.png)
+
+![1_2](https://user-images.githubusercontent.com/19345982/33853146-49a4df0a-df00-11e7-95cf-19c59f26fff6.png)
+
+![1_1](https://user-images.githubusercontent.com/19345982/33853070-003c3d68-df00-11e7-83d9-12c89043b594.png)
+
+![1_2](https://user-images.githubusercontent.com/19345982/33853098-166ba736-df00-11e7-9b8c-066de689f001.png)
+
 ### 画像データをゲーム上で扱いやすくする為に
 
 DXRuby では、画像データを読み込んだままの状態ではゲーム上で
