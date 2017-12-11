@@ -67,7 +67,7 @@ image_array = Image.load_tiles("filepath", xcount, ycount)
 
 絶対パス・相対パスについての説明を以下に図で示します。
 
-![1_1](https://user-images.githubusercontent.com/19345982/33853130-35f7302a-df00-11e7-9a90-4ff621e05843.png)
+![1_1](https://user-images.githubusercontent.com/19345982/33853700-34cad1be-df02-11e7-92ff-35911b84e23d.png)
 
 ![1_2](https://user-images.githubusercontent.com/19345982/33853146-49a4df0a-df00-11e7-95cf-19c59f26fff6.png)
 
