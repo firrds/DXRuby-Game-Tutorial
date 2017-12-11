@@ -345,6 +345,8 @@ Window.loop do
   Sprite.draw(box)
 end
 ```
+衝突のイメージ
+![1](https://user-images.githubusercontent.com/19345982/33853884-ef65fe86-df02-11e7-8248-e7d9f1db4c28.png)
 
 #### 問題 9.
 
