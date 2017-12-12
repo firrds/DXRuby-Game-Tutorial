@@ -127,7 +127,8 @@ Ruby を含め、多くのプログラミング言語では、配列の先頭は
 
 ここで、配列についても図で考えてみましょう。
 以下のように、配列は連なった箱と考えることが出来ます。
-![_ _ 2](https://user-images.githubusercontent.com/19345982/33656436-66e8876a-dab9-11e7-88c7-3c48bde77add.png)
+
+![1](https://user-images.githubusercontent.com/19345982/33869212-ed0e0442-df4a-11e7-8081-409e9b2870d5.png)
 
 ちょっとここで・・・
 配列は何のために必要でしょうか？
