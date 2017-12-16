@@ -145,7 +145,7 @@ Window のサイズを 300x300 px に設定し、
 
 loop do
 
-  if ??? == y座標　←　???に入る値を考えましょう。
+  if ??? == y座標　←　???　に入る値を考えましょう。
     break
   end
   
@@ -169,6 +169,7 @@ loop do
   x座標　変化　x+20
   y座標　固定　0
   配列 = Sprite.new(x,y,ブロックイメージの配列)
+  配列の添字のカウント
 end
 
 loop do
@@ -176,6 +177,7 @@ loop do
   x座標　変化　x+20
   y座標　固定　280
   配列 = Sprite.new(x,y,ブロックイメージの配列)
+  配列の添字のカウント
 end
 ```
 
@@ -208,7 +210,7 @@ count = 0
 
 loop do
   blocks[count] = Sprite.new(block_x, block_y, images[5])
-  if 340 < block_x
+  if 340 <= block_x
     break
   end
   count = count + 1
