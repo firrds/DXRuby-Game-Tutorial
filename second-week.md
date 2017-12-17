@@ -70,7 +70,30 @@ end
 上記プログラムを実行してみると、
 少しばかりのブロックが生成されている事が分かります。
 
-これでは本格的なゲームだけでなく、
+__ここでおさらいです。__
+ブロックを描画するってどういうことでしょうか？
+ひとつのブロック(gray1)について、コードを追ってみましょう。
+以下は、一つのブロック(gray1)のみ描くプログラムです。
+
+```ruby
+require 'dxruby'
+
+image = Image.load_tiles("../image/colorbox.png", 6, 1) #[1]
+
+gray1 = Sprite.new(0,0,image[5])                        #[2]
+
+Window.loop do                                          #[3]
+  Sprite.draw(gray1)
+end
+```
+まず、image = Image.load_tiles("../image/colorbox.png", 6, 1)についてです。
+ブロックの写真がそれぞれ入った、image[0]～image[5]の配列が出来ます。
+以下に図でさらに詳しく解説します。
+
+![_ 1-1](https://user-images.githubusercontent.com/19345982/34082424-97192d72-e3a1-11e7-8b2c-e43c2fbdac29.png)
+
+上記のようにひとつひとつのブロックを分けて描画すると
+本格的なゲームだけでなく、
 簡単なゲームを作るだけでもかなりの労力を伴います。
 その為、繰り返しを使う訳です。
 
