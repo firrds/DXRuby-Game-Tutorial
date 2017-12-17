@@ -91,7 +91,7 @@ end
 ```
 [1] 情報への準備・・・・配列Aに写真をいれる
 ```ruby
-image = Image.load_tiles("../image/colorbox.png", 6, 1)
+image = Image.load_tiles("../image/colorbox.png", 6, 1)  # 配列A = Image.load_tiles("写真のファイルの場所",x分割数,y分割数)
 ```
 ブロックの写真がそれぞれ入った、image[0]～image[5]の配列が出来ます。
 これで、写真が入った、配列 imageを使うことが出来るようになります。
@@ -102,7 +102,7 @@ image = Image.load_tiles("../image/colorbox.png", 6, 1)
 
 [2] 情報を得ること・・・・配列Bに、どこの座標から描くのか、どんな写真なのか(配列A)の情報をいれる
 ```ruby
-gray1 = Sprite.new(0,0,image[5])
+gray1 = Sprite.new(0,0,image[5]) # 配列B = Sprite.new(x座標,y座標,配列A)
 ```
 この一行によって、gray1の情報が具体的になります。
 gray1は、(0,0)の座標から描画されるということ、さらに、上記[1]で示したように、image[5]の灰色のブロックの写真であるという具体的な情報を得ます。
@@ -115,11 +115,11 @@ gray1は配列であるということ、はじめて聞いたかもしれませ
 
 [3] 情報を描くこと・・・・ 配列Bを描く
 ```ruby
-Window.loop do
-  Sprite.draw(gray1)
+Window.loop do #永遠に、1秒間毎に30回まわる
+  Sprite.draw(gray1)  # Sprite.draw(配列B)
 end
 ```
-loopは1秒間に30回、永遠にまわる命令でしたね。Sprite.draw(gray1)で、Windowに上記[2]の情報を持った、gray1を描きます。
+loopは1秒間毎に30回、永遠にまわる命令でしたね。Sprite.draw(gray1)で、Windowに上記[2]の情報を持った、gray1を描きます。
 つまり、1秒間に30回、Windowにgray1(gray1の情報：(0,0)から描かれる、image[5]の灰色のブロックの写真)が描かれるということです。
 
 ![gray1 2](https://user-images.githubusercontent.com/19345982/34082186-203a72e6-e39d-11e7-98fd-d7062439e4d7.png)
