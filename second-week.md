@@ -86,11 +86,18 @@ Window.loop do                                          #[3]
   Sprite.draw(gray1)
 end
 ```
-まず、image = Image.load_tiles("../image/colorbox.png", 6, 1)についてです。
+[1] image = Image.load_tiles("../image/colorbox.png", 6, 1)についてです。
 ブロックの写真がそれぞれ入った、image[0]～image[5]の配列が出来ます。
 以下に図でさらに詳しく解説します。
 
 ![_ 1-1](https://user-images.githubusercontent.com/19345982/34082620-f53adb1e-e3a4-11e7-8e65-3cf94ba2429f.png)
+
+[2] gray1 = Sprite.new(0,0,image[5])についてです。
+この一行によって、gray1の情報が具体的になります。
+gray1は、(0,0)の座標から描画されるということ、さらに、上記[1]で示した、image[5]のブロック写真だという具体的な情報を得ます。
+以下に図で示しますので、イメージしてみて下さい。
+
+![gray1 1-1](https://user-images.githubusercontent.com/19345982/34082180-ff38868c-e39c-11e7-923b-ee0a3cd9ce63.png)
 
 上記のようにひとつひとつのブロックを分けて描画すると
 本格的なゲームだけでなく、
