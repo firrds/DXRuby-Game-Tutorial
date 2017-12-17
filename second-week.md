@@ -202,7 +202,7 @@ Window のサイズを 300x300 px に設定し、
 
 ![1-1](https://user-images.githubusercontent.com/19345982/34082139-3805be54-e39c-11e7-8c24-78a48b2dfef0.png)
 
-![default](https://user-images.githubusercontent.com/19345982/34083750-d75ec3c6-e3b8-11e7-8c5e-4c1458107062.png)
+![1-1](https://user-images.githubusercontent.com/19345982/34083775-28b75b84-e3b9-11e7-9a4b-5ba38213efcb.png)
 
 ![-](https://user-images.githubusercontent.com/19345982/34082044-81cf09b6-e39a-11e7-8a6e-aa667affa497.png)
 
