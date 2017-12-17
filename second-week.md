@@ -122,7 +122,7 @@ end
 loopは1秒間毎に30回、永遠にまわる命令でしたね。Sprite.draw(gray1)で、Windowに上記[2]の情報を持った、gray1を描きます。
 つまり、1秒間に30回、Windowにgray1(gray1の情報：(0,0)から描かれる、image[5]の灰色のブロックの写真)が描かれるということです。
 
-![gray1 2](https://user-images.githubusercontent.com/19345982/34082186-203a72e6-e39d-11e7-98fd-d7062439e4d7.png)
+![gray1 2-1](https://user-images.githubusercontent.com/19345982/34083291-26170634-e3b1-11e7-95b3-f576781c014c.png)
 
 ここでおさらいは終わります。
 
