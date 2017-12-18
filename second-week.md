@@ -111,7 +111,7 @@ gray1は配列であるということ、はじめて聞いたかもしれませ
 　※ Spriteについて、詳しく知りたい場合、以下URLを参考にしましょう。
  　　　http://dxruby.osdn.jp/DXRubyReference/201272119113718.htm
 
-![gray1 1-1](https://user-images.githubusercontent.com/19345982/34082180-ff38868c-e39c-11e7-923b-ee0a3cd9ce63.png)
+![gray1 1-1](https://user-images.githubusercontent.com/19345982/34100441-c4403654-e425-11e7-831e-ccf326299462.png)
 
 [3] 情報を描くこと・・・・ 配列Bを描く
 ```ruby
@@ -122,7 +122,9 @@ end
 loopは1秒間毎に30回、永遠にまわる命令でしたね。Sprite.draw(gray1)で、Windowに上記[2]の情報を持った、gray1を描きます。
 つまり、1秒間に30回、Windowにgray1(gray1の情報：(0,0)から描かれる、image[5]の灰色のブロックの写真)が描かれるということです。
 
-![gray1 2-1](https://user-images.githubusercontent.com/19345982/34083291-26170634-e3b1-11e7-95b3-f576781c014c.png)
+![gray1 1-1](https://user-images.githubusercontent.com/19345982/34100486-ec81e914-e425-11e7-9897-8b708664b81c.png)
+
+![gray1 2-1](https://user-images.githubusercontent.com/19345982/34100398-a5e49e02-e425-11e7-8645-ee0bcbfcf63a.png)
 
 ここでおさらいは終わります。
 
