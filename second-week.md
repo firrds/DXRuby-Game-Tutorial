@@ -706,9 +706,9 @@ if アイテム === ブロック
   gameover += 1
 end
 if gameover >= 1
-  ゲームオーバーと表示
-  if(Input.keyDown?(キー)
-    break
+  ゲームオーバーと表示する処理
+  if Input.keyDown?(キー)
+    break                 #キーを押したらloopを抜けて終了
   end
 end
 ```
