@@ -100,7 +100,7 @@ image = Image.load_tiles("../image/colorbox.png", 6, 1)  # 配列A = Image.load_
 
 ![_ 1-1](https://user-images.githubusercontent.com/19345982/34082620-f53adb1e-e3a4-11e7-8e65-3cf94ba2429f.png)
 
-[2] 情報を得ること・・・・配列Bに、どこの座標から描くのか、どんな写真なのか(配列A)の情報をいれる
+[2] 具体的な情報を得ること・・・・配列Bに、どこの座標から描くのか、どんな写真なのか(配列A)の情報をいれる
 ```ruby
 gray1 = Sprite.new(0,0,image[5]) # 配列B = Sprite.new(x座標,y座標,配列A)
 ```
@@ -142,11 +142,11 @@ block_y = 0
 count = 0
 sprites = []
 
-images = Image.load_tiles("../image/colorbox.png", 6, 1)
+images = Image.load_tiles("../image/colorbox.png", 6, 1) # [1] 配列Aに写真を入れる(情報への準備)
 
 loop do
-  sprites[count] = Sprite.new(block_x, block_y, images[5])
-  if 180 < block_x
+  sprites[count] = Sprite.new(block_x, block_y, images[5])　# [2] 配列Bにx座標、y座標、写真が入った配列Aを入れる(具体的な情報を得る)
+  if 180 < block_x
     break
   end
   block_x = block_x + 20
@@ -154,7 +154,7 @@ loop do
 end
 
 Window.loop do
-  Sprite.draw(sprites)
+  Sprite.draw(sprites)　# [3] 配列BをWindowに描く(情報を描く)
 end
 ```
 
@@ -309,13 +309,13 @@ loop do
   
   ## 左端のブロック
   #x座標　固定　x2 = 0 <---- 値が固定している場合、loopの中に書かない。
-  y座標　変化　y3 = y3 + 20
+  #y座標　変化　y3 = y3 + 20　これは、loopの最後に書きます。
   配列 = Sprite.new(x2,y3,ブロック写真が入った配列)
   配列の添字のカウント
 
   ## 右端のブロック
   #x座標　固定　x3 = 280 <---- 値が固定している場合、loopの中に書かない。
-  #y座標　変化　y3 = y3 + 20 <---- 上記の左端のブロックのy座標と同じ命令なので、同じコードを使えるので書かない。
+  #y座標　変化　y3 = y3 + 20 <---- 上記の左端のブロックのy座標と同じ命令なので、同じコードを使えるので2重に書かない。
   配列 = Sprite.new(x3,y3,ブロック写真が入った配列)
   配列の添字のカウント
 end
@@ -348,16 +348,20 @@ loop do
   
   ## ソースの順番に気をつけましょう。x1が0のときも実行されるように実装しなければなりません。
   ## 配列の添字のカウントはloop内の最後です。
+  ## loop内のカウントは基本的にloop内の最後に書きます。loop内の途中にカウントしたら、配列の添字が
+  ## 意図した添字の値にならないことがあるからです。
   
   配列 b1[i] = Sprite.new(x1,y1,images[5])
-  x座標　変化　x1 = x1 + 20
+  #x座標　変化　x1 = x1 + 20 これはloopの最後に書きます。
   #y座標　固定　y1 = 0 <---- 値が固定している場合、loopの中に書かない。
   
   ## 下端のブロック
   配列 b2[i] = Sprite.new(x1,y2,images[5])
-  #x座標　変化　x1 = x1 + 20 <----上記の上端のブロックのx座標(x1)と同じ命令であり、同じコードを使えるので書かない。
+  #x座標　変化　x1 = x1 + 20 <----上記の上端のブロックのx座標(x1)と同じ命令であり、同じコードを使えるので2重に書かない。
   #y座標　固定　y2 = 280 <---- 値が固定している場合、loopの中に書かない。
   
+  # x座標のカウント
+  x1 = x1 + 20
   # 配列の添字のカウント
   i += 1
 end
@@ -386,17 +390,23 @@ loop do
   
   配列 b3[j] = Sprite.new(x2,y3,images[5])
   #x座標　固定　x2 = 0 <---- 値が固定している場合、loopの中に書かない。
-  y座標　変化　y3 = y3 + 20
+  #y座標　変化　y3 = y3 + 20　これは、カウントのため、loop内の最後に書きます。
 
   ## 右端のブロック
   配列 b4[j] = Sprite.new(x3,y3,images[5])
   #x座標　固定　x3 = 280 <---- 値が固定している場合、loopの中に書かない。
   #y座標　変化　y3 = y3 + 20 <---- 上記の左端のブロックのy座標と同じ命令なので、同じコードを使えるので書かない。
   
+  # y座標変化
+  y3 = y3 + 20
   # 配列の添字のカウント
   j += 1
 end
 ```
+
+最後のヒント：
+x方向も、y方向も同じブロック数なので、同じカウント量です。
+loopを2回書いていますが、1回にまとめましょう。
 
 #### 問題 12.
 
