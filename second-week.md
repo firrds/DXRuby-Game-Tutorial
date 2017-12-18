@@ -552,12 +552,12 @@ rand メソッドの () には数値を入れる事が出来ます。
 ブロック出現時の X 座標に関する位置をランダムにします。
 
 ```ruby
-x = nil
+item = nil
 
 Window.loop do
   if item.nil?
-    x = rand(340)
-    item = Sprite.new(x, y, image[0])
+    x = rand(340)   # item == nilの場合、if文の中に入る
+    item = Sprite.new(x, y, image[0])
   end
 
   Sprite.draw(item)
