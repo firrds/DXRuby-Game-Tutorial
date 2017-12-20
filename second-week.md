@@ -548,6 +548,3 @@ if gameover >= 1
 end
 ```
 
-## 授業内容改善のアンケート
-[アンケート](https://goo.gl/forms/RFjCYTEC1y24n2JE3)
-
