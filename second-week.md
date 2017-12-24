@@ -547,4 +547,7 @@ if gameover >= 1
   end
 end
 ```
+#### 神戸親和女子大学　学生へのアンケート
+
+　https://goo.gl/forms/8w1xPzY0EiyOo3pB3
 
