@@ -30,4 +30,4 @@ DXRuby でゲーム作成を勉強する為のもの
 
 ## アンケート
 
-- [皇學館大学の学生へのアンケート](https://goo.gl/forms/37j73ObVanuI7P0l2)
+- [学生へのアンケート](https://goo.gl/forms/37j73ObVanuI7P0l2)
