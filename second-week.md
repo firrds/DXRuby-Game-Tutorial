@@ -551,7 +551,7 @@ end
 #### 大阪産業大学　学生へのアンケート
 　https://goo.gl/forms/7EZ7uEr1TW6Qyoow2
  
-#### 神戸親和女子大学　学生へのアンケート
+#### 皇學館大学　学生へのアンケート
 
 　https://goo.gl/forms/8w1xPzY0EiyOo3pB3
 
