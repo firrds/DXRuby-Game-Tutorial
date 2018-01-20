@@ -1,4 +1,4 @@
-DXRuby-Game-Tutorial
+付録1 DXRuby-Game-Tutorial
 ====================
 
 DXRuby でゲーム作成を勉強する為のもの
