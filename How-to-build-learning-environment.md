@@ -9,9 +9,7 @@ FP2game.zipを解凍後、「FP2game」-「OneBlockTetris」-development.exeを�
 実行する（スクリプト）ファイルを聞かれるので、それに実行するRubyのファイルを指定する。このとき、実行するRubyのファイルをダブルクリックする（図4）か、もしくは、実行するRubyのファイルを左クリック後、「開く」ボタンを左クリックして（図5）指定する。なお、同フォルダにある、game.exeでもRubyのプログラムを実行することが出来るが、プログラムのエラーが出力されないため、用いない。
 Rubyのプログラムが実行される（図6）。
 
-![1_download](https://user-images.githubusercontent.com/19345982/36559907-a38b905a-1852-11e8-899b-eb676512016c.png)
-
-図1：　教材ダウンロードのリンクにアクセス
+![1_download](https://user-images.githubusercontent.com/19345982/36559907-a38b905a-1852-11e8-899b-eb676512016c.png "図1：　教材ダウンロードのリンクにアクセス")
 
 ![2_ google drive fp2game zip](https://user-images.githubusercontent.com/19345982/36560035-033c3a54-1853-11e8-9d0b-1dfed4273af0.png)
 
