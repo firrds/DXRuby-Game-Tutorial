@@ -7,6 +7,7 @@
 - [Ruby について](./about-ruby.md)
 
 [教材ダウンロード](https://drive.google.com/file/d/0B8M7bkByTfhFWDVNV3R3bUxvRzA/view?usp=sharing)
+[教材ダウンロード方法](./How-to-build-learning-environment.md)
 
 
 ## DXRuby について
