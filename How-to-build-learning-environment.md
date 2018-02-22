@@ -10,9 +10,11 @@ FP2game.zipを解凍後、「FP2game」-「OneBlockTetris」-development.exeを�
 Rubyのプログラムが実行される（図6）。
 
 ![1_download](https://user-images.githubusercontent.com/19345982/36559907-a38b905a-1852-11e8-899b-eb676512016c.png)
+
 図1：　教材ダウンロードのリンクにアクセス
 
 ![2_ google drive fp2game zip](https://user-images.githubusercontent.com/19345982/36560035-033c3a54-1853-11e8-9d0b-1dfed4273af0.png)
+
 図2：　各自のgoogle drive上に「FP2game.zip」をダウンロード
 
 ![3_development exe](https://user-images.githubusercontent.com/19345982/36560213-8250ca9e-1853-11e8-896c-ac21879cbb61.png)
