@@ -444,12 +444,10 @@ end
 # coding: cp932
 require 'dxruby'
 
-x = 100
-y = 100
 font = Font.new(32)
 
 Window.loop do
-  Window.draw_font(x, y, "ふぉんと", font)
+  Window.draw_font(100, 100, "ふぉんと", font)
 end
 ```
 
