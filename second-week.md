@@ -40,18 +40,18 @@ Map を作成するには、既に習った配列と繰り返しを使用する�
 ```ruby
 require 'dxruby'
 
-image = Image.load_tiles("../image/colorbox.png", 6, 1)
+image_box = Image.load_tiles("../image/colorbox.png", 6, 1)
 
-gray1 = Sprite.new(0,0,image[5])
-gray2 = Sprite.new(20,0,image[5])
-gray3 = Sprite.new(40,0,image[5])
-gray4 = Sprite.new(60,0,image[5])
-gray5 = Sprite.new(80,0,image[5])
-gray6 = Sprite.new(100,0,image[5])
-gray7 = Sprite.new(120,0,image[5])
-gray8 = Sprite.new(140,0,image[5])
-gray9 = Sprite.new(160,0,image[5])
-gray10 = Sprite.new(180,0,image[5])
+gray1 = Sprite.new(0,0,image_box[5])
+gray2 = Sprite.new(20,0,image_box[5])
+gray3 = Sprite.new(40,0,image_box[5])
+gray4 = Sprite.new(60,0,image_box[5])
+gray5 = Sprite.new(80,0,image_box[5])
+gray6 = Sprite.new(100,0,image_box[5])
+gray7 = Sprite.new(120,0,image_box[5])
+gray8 = Sprite.new(140,0,image_box[5])
+gray9 = Sprite.new(160,0,image_box[5])
+gray10 = Sprite.new(180,0,image_box[5])
 
 Window.loop do
   Sprite.draw(gray1)
@@ -81,9 +81,9 @@ end
 ```ruby
 require 'dxruby'
 
-image = Image.load_tiles("../image/colorbox.png", 6, 1) #[1]
+image_box = Image.load_tiles("../image/colorbox.png", 6, 1) #[1]
 
-gray1 = Sprite.new(0,0,image[5])                        #[2]
+gray1 = Sprite.new(0,0,image_box[5])                        #[2]
 
 Window.loop do                                          #[3]
   Sprite.draw(gray1)
@@ -91,18 +91,18 @@ end
 ```
 [1] 情報への準備・・・・配列Aに写真をいれる
 ```ruby
-image = Image.load_tiles("../image/colorbox.png", 6, 1)  # 配列A = Image.load_tiles("写真のファイルの場所",x分割数,y分割数)
+image_box = Image.load_tiles("../image/colorbox.png", 6, 1)  # 配列A = image_box.load_tiles("写真のファイルの場所",x分割数,y分割数)
 ```
-ブロックの写真がそれぞれ入った、image[0]～image[5]の配列が出来ます。
-これで、写真が入った、配列 imageを使うことが出来るようになります。
-灰色のブロックの写真が入っているimage[5]を使用します。
+ブロックの写真がそれぞれ入った、image_box[0]～image_box[5]の配列が出来ます。
+これで、写真が入った、配列 image_boxを使うことが出来るようになります。
+灰色のブロックの写真が入っているimage_box[5]を使用します。
 以下に図でさらに詳しく解説します。
 
 ![_ 1-1](https://user-images.githubusercontent.com/19345982/34082620-f53adb1e-e3a4-11e7-8e65-3cf94ba2429f.png)
 
 [2] 具体的な情報を得ること・・・・配列Bに、どこの座標から描くのか、どんな写真なのか(配列A)の情報をいれる
 ```ruby
-gray1 = Sprite.new(0,0,image[5]) # 配列B = Sprite.new(x座標,y座標,配列A)
+gray1 = Sprite.new(0,0,image_box[5]) # 配列B = Sprite.new(x座標,y座標,配列A)
 ```
 この一行によって、gray1の情報が具体的になります。
 gray1は、(0,0)の座標から描画されるということ、さらに、上記[1]で示したように、image[5]の灰色のブロックの写真であるという具体的な情報を得ます。
@@ -120,7 +120,7 @@ Window.loop do #永遠に、1秒間毎に30回まわる
 end
 ```
 loopは1秒間毎に30回、永遠にまわる命令でしたね。Sprite.draw(gray1)で、Windowに上記[2]の情報を持った、gray1を描きます。
-つまり、1秒間に30回、Windowにgray1(gray1の情報：(0,0)から描かれる、image[5]の灰色のブロックの写真)が描かれるということです。
+つまり、1秒間に30回、Windowにgray1(gray1の情報：(0,0)から描かれる、image_box[5]の灰色のブロックの写真)が描かれるということです。
 
 ![gray1 1-1](https://user-images.githubusercontent.com/19345982/34100486-ec81e914-e425-11e7-9897-8b708664b81c.png)
 
@@ -144,10 +144,10 @@ block_y = 0
 count = 0
 sprites = []
 
-images = Image.load_tiles("../image/colorbox.png", 6, 1) # [1] 配列Aに写真を入れる(情報への準備)
+image_box = Image.load_tiles("../image/colorbox.png", 6, 1) # [1] 配列Aに写真を入れる(情報への準備)
 
 loop do
-  sprites[count] = Sprite.new(block_x, block_y, images[5])　# [2] 配列Bにx座標、y座標、写真が入った配列Aを入れる(具体的な情報を得る)
+  sprites[count] = Sprite.new(block_x, block_y, image_box[5])　# [2] 配列Bにx座標、y座標、写真が入った配列Aを入れる(具体的な情報を得る)
   if 180 < block_x
     break
   end
@@ -251,7 +251,7 @@ end
 Window.width = 360
 Window.height = 480
 
-images = Image.load_tiles("../image/colorbox.png", 6, 1)
+image_box = Image.load_tiles("../image/colorbox.png", 6, 1)
 
 block_x = 0
 block_y = 460
@@ -259,7 +259,7 @@ blocks = []
 count = 0
 
 loop do
-  blocks[count] = Sprite.new(block_x, block_y, images[5])
+  blocks[count] = Sprite.new(block_x, block_y, image_box[5])
   if 340 <= block_x
     break
   end
@@ -310,7 +310,7 @@ end
 ```ruby
 item_x = 100
 item_y = 0
-item = Sprite.new(item_x, item_y, images[0])
+item = Sprite.new(item_x, item_y, image_box[0])
 
 Window.loop do
   item.y += 1
@@ -390,7 +390,7 @@ item = nil
 Window.loop do
   if item.nil?
     x = rand(340)   # item == nilの場合、if文の中に入る
-    item = Sprite.new(x, y, image[0])
+    item = Sprite.new(x, y, image_box[0])
   end
 
   Sprite.draw(item)
