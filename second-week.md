@@ -308,9 +308,9 @@ end
 画像には、block の灰色以外の物を使いたいと思います。
 
 ```ruby
-item_x = x
+item_x = 100
 item_y = 0
-item = Sprite.new(item_x, item_y, image[0])
+item = Sprite.new(item_x, item_y, images[0])
 
 Window.loop do
   item.y += 1
