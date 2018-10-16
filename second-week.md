@@ -545,8 +545,4 @@ if gameover >= 1
   end
 end
 ```
- 
-#### 学生へのアンケート
-
-　https://goo.gl/forms/8w1xPzY0EiyOo3pB3
 
