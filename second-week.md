@@ -28,7 +28,7 @@ Sprite データを画面に表示する時のプログラムを纏める事が�
 ### Map の作り方
 
 Map という名前がついてる為、キャラクタとは異なるモノを連想しがちですが、
-基本的に Map も画像を並べているだけ
+基本的に  Map も画像を並べているだけ
 (障害物や人等の意味合いをもたせるのはあくまでもプログラムの仕事) で、
 自分が表現したいように画像を並べる方法を覚えると、
 簡単に Map を生成することが出来ます。
@@ -70,7 +70,67 @@ end
 上記プログラムを実行してみると、
 少しばかりのブロックが生成されている事が分かります。
 
-これでは本格的なゲームだけでなく、
+
+ __ここでおさらいです。__ 
+写真を描画するってどういう手順を踏むのでしょうか？第1周目の授業ではキャラクターを描きましたね。
+では、ひとつのブロック(gray1という配列)について、コードを追ってみましょう。
+以下は、一つのブロック(gray1)のみ描くプログラムです。
+手順は、大きく、3つに分かれます。
+1つめは情報への準備、2つめは情報を得ること、3つめは情報を描くことです。
+
+```ruby
+require 'dxruby'
+
+image = Image.load_tiles("../image/colorbox.png", 6, 1) #[1]
+
+gray1 = Sprite.new(0,0,image[5])                        #[2]
+
+Window.loop do                                          #[3]
+  Sprite.draw(gray1)
+end
+```
+[1] 情報への準備・・・・配列Aに写真をいれる
+```ruby
+image = Image.load_tiles("../image/colorbox.png", 6, 1)  # 配列A = Image.load_tiles("写真のファイルの場所",x分割数,y分割数)
+```
+ブロックの写真がそれぞれ入った、image[0]～image[5]の配列が出来ます。
+これで、写真が入った、配列 imageを使うことが出来るようになります。
+灰色のブロックの写真が入っているimage[5]を使用します。
+以下に図でさらに詳しく解説します。
+
+![_ 1-1](https://user-images.githubusercontent.com/19345982/34082620-f53adb1e-e3a4-11e7-8e65-3cf94ba2429f.png)
+
+[2] 具体的な情報を得ること・・・・配列Bに、どこの座標から描くのか、どんな写真なのか(配列A)の情報をいれる
+```ruby
+gray1 = Sprite.new(0,0,image[5]) # 配列B = Sprite.new(x座標,y座標,配列A)
+```
+この一行によって、gray1の情報が具体的になります。
+gray1は、(0,0)の座標から描画されるということ、さらに、上記[1]で示したように、image[5]の灰色のブロックの写真であるという具体的な情報を得ます。
+以下に図で示しますので、イメージしてみて下さい。
+gray1は配列であるということ、はじめて聞いたかもしれませんが、覚えておいて下さい。
+　※ Spriteについて、詳しく知りたい場合、以下URLを参考にしましょう。
+ 　　　http://dxruby.osdn.jp/DXRubyReference/201272119113718.htm
+
+![gray1 1-1](https://user-images.githubusercontent.com/19345982/34100441-c4403654-e425-11e7-831e-ccf326299462.png)
+
+[3] 情報を描くこと・・・・ 配列Bを描く
+```ruby
+Window.loop do #永遠に、1秒間毎に30回まわる
+  Sprite.draw(gray1)  # Sprite.draw(配列B)
+end
+```
+loopは1秒間毎に30回、永遠にまわる命令でしたね。Sprite.draw(gray1)で、Windowに上記[2]の情報を持った、gray1を描きます。
+つまり、1秒間に30回、Windowにgray1(gray1の情報：(0,0)から描かれる、image[5]の灰色のブロックの写真)が描かれるということです。
+
+![gray1 1-1](https://user-images.githubusercontent.com/19345982/34100486-ec81e914-e425-11e7-9897-8b708664b81c.png)
+
+![gray1 2-1](https://user-images.githubusercontent.com/19345982/34100398-a5e49e02-e425-11e7-8645-ee0bcbfcf63a.png)
+
+ここでおさらいは終わります。
+
+
+上記のようにひとつひとつのブロックを分けて描画すると
+本格的なゲームだけでなく、
 簡単なゲームを作るだけでもかなりの労力を伴います。
 その為、繰り返しを使う訳です。
 
@@ -84,11 +144,11 @@ block_y = 0
 count = 0
 sprites = []
 
-images = Image.load_tiles("../image/colorbox.png", 6, 1)
+images = Image.load_tiles("../image/colorbox.png", 6, 1) # [1] 配列Aに写真を入れる(情報への準備)
 
 loop do
-  sprites[count] = Sprite.new(block_x, block_y, images[5])
-  if 180 < block_x
+  sprites[count] = Sprite.new(block_x, block_y, images[5])　# [2] 配列Bにx座標、y座標、写真が入った配列Aを入れる(具体的な情報を得る)
+  if 180 < block_x
     break
   end
   block_x = block_x + 20
@@ -96,7 +156,7 @@ loop do
 end
 
 Window.loop do
-  Sprite.draw(sprites)
+  Sprite.draw(sprites)　# [3] 配列BをWindowに描く(情報を描く)
 end
 ```
 
@@ -131,6 +191,46 @@ Window のサイズを 300x300 px に設定し、
 画面の上下左右端を全て block で埋める様にプログラムを作成して下さい。
 この時、キャラクタは作成する必要はありません。
 
+ヒント：
+以下のように図を書いて、ブロックの座標がどう変化しているかをたしかめましょう。
+変化しているデータと変化していないデータがあります。
+変化しているデータは、どのように変化しているでしょうか。規則性がありませんか？
+
+![-](https://user-images.githubusercontent.com/19345982/34082019-3e684c28-e39a-11e7-96f9-ee4376b3bc23.png)
+
+![1-1](https://user-images.githubusercontent.com/19345982/34082125-078630b0-e39c-11e7-89ad-96e5b947af81.png)
+
+![-](https://user-images.githubusercontent.com/19345982/34082038-68040aea-e39a-11e7-96ca-cfb5b2263a8a.png)
+
+![1-1](https://user-images.githubusercontent.com/19345982/34082139-3805be54-e39c-11e7-8c24-78a48b2dfef0.png)
+
+![1-1](https://user-images.githubusercontent.com/19345982/34083775-28b75b84-e3b9-11e7-9a4b-5ba38213efcb.png)
+
+![-](https://user-images.githubusercontent.com/19345982/34082044-81cf09b6-e39a-11e7-8a6e-aa667affa497.png)
+
+![1-1](https://user-images.githubusercontent.com/19345982/34082166-a7032b70-e39c-11e7-8ef7-d4c0d421ffaa.png)
+
+![-](https://user-images.githubusercontent.com/19345982/34082055-a3b6611e-e39a-11e7-9f02-0b48e8cc6794.png)
+
+![1-1](https://user-images.githubusercontent.com/19345982/34082175-cca522e8-e39c-11e7-8125-5b77b2a432c9.png)
+
+さらにヒント：
+
+![_ 1-1](https://user-images.githubusercontent.com/19345982/34119877-08df2270-e467-11e7-93a9-4ab9a2eb65ad.png)
+
+![_ 1-2](https://user-images.githubusercontent.com/19345982/34119903-1ea413cc-e467-11e7-9e05-e47ba53f8aa7.png)
+
+![_ 1-3](https://user-images.githubusercontent.com/19345982/34119924-31c8d1fe-e467-11e7-8be3-92d46584b079.png)
+
+![_ 1-4](https://user-images.githubusercontent.com/19345982/34119948-493dcd58-e467-11e7-8746-de4dbbabc786.png)
+
+※ 補足・・・loopを抜けて終了する箇所は、以下のようにしてもOKです。ただ、今回、xの変化量とyの変化量は同じ、つまり同じ回数ループするため、xのみ判定しています。以下の ??? は同じ数字が入ります。
+```ruby
+if ??? == x || ??? == y
+  break
+end
+```
+
 #### 問題 12.
 
 問題 11 で作ったプログラムにキャラクタを追加して下さい。
@@ -160,7 +260,7 @@ count = 0
 
 loop do
   blocks[count] = Sprite.new(block_x, block_y, images[5])
-  if 340 < block_x
+  if 340 <= block_x
     break
   end
   count = count + 1
@@ -285,12 +385,12 @@ rand メソッドの () には数値を入れる事が出来ます。
 ブロック出現時の X 座標に関する位置をランダムにします。
 
 ```ruby
-x = nil
+item = nil
 
 Window.loop do
   if item.nil?
-    x = rand(340)
-    item = Sprite.new(x, y, image[0])
+    x = rand(340)   # item == nilの場合、if文の中に入る
+    item = Sprite.new(x, y, image[0])
   end
 
   Sprite.draw(item)
@@ -387,6 +487,7 @@ test.to_s
 それはゲームの明確な終わりをプレイヤーに示せない点でしょうか。
 
 ゲームが唐突に始まる事よりも、
+
 ゲームの終りとしての区切りが無い方が不便と思われます。
 
 プログラムの定義にも正しく終了出来る事がある事ですし、
@@ -396,6 +497,7 @@ test.to_s
 画面の外に出て返ってこない仕様です。
 その為、次のブロックが出て来る事を永遠に待つ事になります。
 これが問題です。
+
 なので、この問題点を解消し、
 落下ブロックが下のブロックに触れた段階で終了にします。
 
@@ -429,3 +531,24 @@ Game Over の様なメッセージと、
 
 この様に、表示したいパーツだけを宣言するテクニックも
 ゲームの中では重要になります。
+
+さらにヒント：
+例えば、gameoverという変数を用意します。最初は値を0にしておきます。
+ブロックに当たったら、gameoverをカウントするようにして、ifでgameover
+が1以上であれば、ゲームを終了できるように実装します。
+```ruby
+if アイテム === ブロック
+  gameover += 1
+end
+if gameover >= 1
+  ゲームオーバーと表示する処理
+  if Input.keyDown?(キー)
+    break                 #キーを押したらloopを抜けて終了
+  end
+end
+```
+ 
+#### 学生へのアンケート
+
+　https://goo.gl/forms/8w1xPzY0EiyOo3pB3
+

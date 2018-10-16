@@ -7,6 +7,7 @@
 - [Ruby について](./about-ruby.md)
 
 [教材ダウンロード](https://drive.google.com/file/d/0B8M7bkByTfhFWDVNV3R3bUxvRzA/view?usp=sharing)
+[教材ダウンロード方法](./How-to-build-learning-environment.md)
 
 
 ## DXRuby について
@@ -65,6 +66,16 @@ image_array = Image.load_tiles("filepath", xcount, ycount)
 実際に画像を表示する為には、その為の命令を Window.loop do ... end
 の中に記述する必要があります。
 
+絶対パス・相対パスについての説明を以下に図で示します。
+
+![1_1](https://user-images.githubusercontent.com/19345982/33853700-34cad1be-df02-11e7-92ff-35911b84e23d.png)
+
+![1_2](https://user-images.githubusercontent.com/19345982/33853146-49a4df0a-df00-11e7-95cf-19c59f26fff6.png)
+
+![1_1](https://user-images.githubusercontent.com/19345982/33853070-003c3d68-df00-11e7-83d9-12c89043b594.png)
+
+![1_2](https://user-images.githubusercontent.com/19345982/33853098-166ba736-df00-11e7-9b8c-066de689f001.png)
+
 ### 画像データをゲーム上で扱いやすくする為に
 
 DXRuby では、画像データを読み込んだままの状態ではゲーム上で
@@ -109,6 +120,22 @@ image では何の画像か分かり辛いので、
 そのキャラクタの名前を変数名に使うなどが、例として考えられます。
 サンプルでは、どの様な物として扱うのかを分かり易くする為に、
 一般的な名前を使用しています。
+
+※ 写真の分割について以下に図で説明します。
+
+![_ 1_1](https://user-images.githubusercontent.com/19345982/33780700-06fee280-dc95-11e7-94c6-eb370aadae3a.jpg)
+
+![_ 1_2](https://user-images.githubusercontent.com/19345982/33780720-170ed072-dc95-11e7-9fa3-31ddf38331de.jpg)
+
+　image = Image.load_tiles("../character.png", 数字1,数字2)の数字1、数字2のの部分をいろいろかえてみましょう。
+ 
+![_ 1_3](https://user-images.githubusercontent.com/19345982/33780729-23908c32-dc95-11e7-89e4-930e1e5a06dd.jpg)
+
+![_ 1_4](https://user-images.githubusercontent.com/19345982/33780767-4a6cf73c-dc95-11e7-89d7-236b3c8bfd0d.jpg)
+
+※　loopで写真を描くと、静止画はもちろん、工夫すれば、アニメーションが出来ます。コマ送りのイメージです。
+![_ 1](https://user-images.githubusercontent.com/19345982/33782010-341d13c2-dc9a-11e7-8c10-78fef56127ed.png)
+![_ 1](https://user-images.githubusercontent.com/19345982/33782036-58fd6fca-dc9a-11e7-90c1-f7a978681a33.png)
 
 ### Sprite データの処理 (画像データの画面内移動)
 
@@ -162,6 +189,24 @@ sample_sprite の増加値を変えると移動速度が変わる事も確認し
 sprite が画面の左端から外に出ない様にして下さい。
 画面の左端は X 軸の 0 です。
 
+ヒント：
+if文を使います。
+
+さらにヒント：
+sample_sprite.x-=1するときのif文の条件を考えましょう。
+
+さらにヒント：
+上記の例だと、if文でsample_sprite.xが0より左に進まないようにするには？
+
+さらにヒント：
+```ruby
+if sample_sprite.x > 0
+  sample_sprite.x -= 1
+end
+```
+ここで注意：if文で、sample_sprite.x > 0を条件としています。
+もし、sample_sprite.x >= 0を条件とするとsample_sprite.x -= 1はどういう値になるでしょうか？
+sample_sprite.xは-1になってしまいます。if文の条件に注意しましょう。
 
 ## DXRuby でゲーム作成
 
@@ -226,6 +271,28 @@ end
 矢印キーを使って、
 上下左右に移動出来る様にプログラムを作成して下さい。
 
+ヒント：
+
+```ruby
+  if Input.keyDown?(キー)
+   ここに入れるコードは以下参照
+  end
+```
+
+■ 右に進む場合
+ sample_sprite.x += 1
+
+■ 左に進む場合
+ sample_sprite.x -= 1
+
+■ 上に進む場合
+ sample_sprite.y -= 1
+
+■ 下に進む場合
+ sample_sprite.y += 1
+ 
+![_ 1](https://user-images.githubusercontent.com/19345982/33780879-b78291a6-dc95-11e7-9370-cb963d267ae9.png)
+
 ### 衝突判定
 
 衝突判定とは、
@@ -279,6 +346,10 @@ Window.loop do
   Sprite.draw(box)
 end
 ```
+
+衝突のイメージ
+
+![1](https://user-images.githubusercontent.com/19345982/33853884-ef65fe86-df02-11e7-8248-e7d9f1db4c28.png)
 
 #### 問題 9.
 
