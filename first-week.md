@@ -198,12 +198,6 @@ sample_sprite.x-=1するときのif文の条件を考えましょう。
 さらにヒント：
 上記の例だと、if文でsample_sprite.xが0より左に進まないようにするには？
 
-さらにヒント：
-```ruby
-if sample_sprite.x > 0
-  sample_sprite.x -= 1
-end
-```
 ここで注意：if文で、sample_sprite.x > 0を条件としています。
 もし、sample_sprite.x >= 0を条件とするとsample_sprite.x -= 1はどういう値になるでしょうか？
 sample_sprite.xは-1になってしまいます。if文の条件に注意しましょう。
