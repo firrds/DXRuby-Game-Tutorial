@@ -318,31 +318,31 @@ Sprite データとして ２ つの画像 (オブジェクト) を用意しま�
 
 サンプルコードを実行して衝突する事と確認して下さい。
 ```ruby
-image_chara = Image.load_tiles("../character.png", 4, 4)
-chara = Sprite.new(200, 200, image_chara[0])
+image = Image.load_tiles("../character.png", 4, 4)
+sample_sprite = Sprite.new(200, 200, image[0])
 
 image_box = Image.load_tiles("../image/colorbox.png", 6, 1)
 box = Sprite.new(400, 200, image_box[0])
 
 Window.loop do
   if Input.keyDown?(K_L)
-    chara.x += 2
+    sample_sprite.x += 1
     # === を使って左辺と右辺を比較する事で衝突の判定をとることが出来る
     # この時両方のデータは Sprite データを持った変数か、配列であること
     # それ以外ではエラーとなる
     # 衝突が行われた場合は true が返ってくるため、この場合、
-    # 直前にキャラクタの座標を x+2 しているため、その時に衝突した場合は
+    # 直前にキャラクタの座標を x+1 しているため、その時に衝突した場合は
     # x+2 の処理を取りやめている
     # 結果的に、キャラクタは移動せずに壁にぶつかって止まっているように見える
-    if chara === box
-      chara.x -= 2
+    if sample_sprite === box
+      sample_sprite.x -= 1
     end
   end
 
   # 画面の更新を行っている
   # この処理が実行されるまでは、オブジェクトにどれだけ変化が起こっていても
   # 見た目には反映されない
-  Sprite.draw(chara)
+  Sprite.draw(sample_sprite)
   Sprite.draw(box)
 end
 ```
