@@ -441,7 +441,7 @@ end
 ゲームの画面に文字を表示するには下記の様に記述します。
 
 ```ruby
-# coding: cp932
+# coding: utf8
 require 'dxruby'
 
 font = Font.new(32)
