@@ -31,7 +31,7 @@ DXRuby をまとめているフォルダに、
 Window を作成するだけであれば、
 DXRuby では下記の様に書く事で実現出来ます。
 ```ruby
-# -*- coding: cp932 -*-
+# -*- coding: utf8 -*-
 require 'dxruby'
 
 Window.loop do
