@@ -28,6 +28,6 @@ DXRuby でゲーム作成を勉強する為のもの
 
 - [第三週目内容](./third-week.md)
 
-## アンケート
+## 参考資料
 
-- [学生へのアンケート](https://goo.gl/forms/37j73ObVanuI7P0l2)
+- [より複雑な処理をできるためのソースコードサンプル](./resource.md)
