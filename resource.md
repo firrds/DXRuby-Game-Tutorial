@@ -1,12 +1,13 @@
+### より複雑な処理をできるためのソースコードサンプル
 
-[アニメーションの表示](./anime_sprite.rb)
-
-
-[背景のスクロール](./background.rb)
+-[アニメーションの表示](./anime_sprite.rb)
 
 
-[課題20のジャンプ](./easy_jump.rb)
+-[背景のスクロール](./background.rb)
 
 
-[ジャンプ＋重力処理](./jump.rb)
+-[課題20のジャンプ](./easy_jump.rb)
+
+
+-[ジャンプ＋重力処理](./jump.rb)
 
