@@ -85,7 +85,7 @@ DXRuby では、画像データを読み込んだままの状態ではゲーム�
 タイル上の画像を読み込む場合
 ```ruby
 # coding: utf-8
-require 'dxruby
+require 'dxruby'
 x = 0
 y = 0
 
@@ -105,7 +105,7 @@ end
 1 枚の画像を表示する場合
 ```ruby
 # coding: utf-8
-require 'dxruby
+require 'dxruby'
 x = 0
 y = 0
 
