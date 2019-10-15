@@ -388,7 +388,7 @@ rand メソッドの () には数値を入れる事が出来ます。
 item = nil
 
 Window.loop do
-  if item.nil?
+  if item.nil? == true
     x = rand(340)   # item == nilの場合、if文の中に入る
     item = Sprite.new(x, y, image_box[0])
   end
