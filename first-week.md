@@ -258,7 +258,7 @@ end
 ```
 
 使いたいキーのコードを調べたい場合、
-[DXRuby キーコードリファレンス](http://dxruby.sourceforge.jp/DXRubyReference/2009823193120640.htm)
+[DXRuby キーコードリファレンス](http://mirichi.github.io/dxruby-doc/api/constant_keycode.html)
 を参照して下さい。
 
 #### 問題 8.
