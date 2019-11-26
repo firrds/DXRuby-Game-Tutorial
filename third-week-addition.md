@@ -7,7 +7,7 @@
 
 #### マップの作成
 
-'''ruby
+```ruby
 # coding: utf-8
 require 'dxruby'
 
@@ -29,7 +29,7 @@ tile_image = Image.load_tiles('../image/colorbox.png',6,1)
 Window.loop do
   Sprite.draw(blocks)
 end
-'''
+```
 
 
 #### ゲームシーンの切り替え
