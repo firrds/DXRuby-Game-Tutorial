@@ -27,6 +27,7 @@ DXRuby でゲーム作成を勉強する為のもの
 ## 第三週目
 
 - [第三週目内容](./third-week.md)
+- [第三週目内容追加](./third-week-addition.md)
 
 ## 参考資料
 
