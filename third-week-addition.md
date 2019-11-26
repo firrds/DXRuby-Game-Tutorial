@@ -31,8 +31,57 @@ Window.loop do
 end
 ```
 
+### 追加問題 2.
+
+#### 複数行マップの作成
+
+```ruby
+# coding: utf-8
+require 'dxruby'
+
+map = [
+  [1, 1, 1, 3, 3, 3, 1, 1, 1, 2, 2, 1, 1, 1],
+  [1, 1, 1, 1, 1, 3, 1, 1, 1, 2, 2, 1, 1, 1],
+  [1, 1, 1, 1, 1, 3, 1, 1, 1, 2, 2, 1, 1, 1]
+]
+
+# 座標初期位置
+blocks = Array.new
+
+tile_image = Image.load_tiles('../image/colorbox.png',6,1)
+
+#二重ループ each_with_index の中で、 each_with_index を使う
+#１つ目のループは、mapの行を繰り返していく。（１行目が処理し終わったら２行目の処理を開始させる）
+#２つ目のループは、行の中の各要素を繰り返していく（つまり前の課題と同じ）
+
+Window.loop do
+  Sprite.draw(blocks)
+end
+
+```
+### 追加問題 3.
 
 #### ゲームシーンの切り替え
 
 ゲームを起動すると、画面でゲーム開始の画面が表示される、そして、指定したキーを押すと、画面が変わってゲームを始まるように開始画面を付けてください。
 ヒント：フラグとなる変数を追加してください。フラグの値を判定することでシーンを切り替える。
+
+```ruby
+
+flag = "start"
+
+Window.loop do
+if flag == "start"
+  Window.draw_font(600,300,a,font)
+  Window.draw_font(600,350,"Game START",font)
+  Window.draw_font(600,400,"Push Button s to start the game",font)
+  if Input.keyDown?(K_s)
+    a = "begin"
+  end
+# ほかのフラグの状態の処理はその続きで書く
+
+
+end
+
+
+```
