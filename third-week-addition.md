@@ -5,6 +5,33 @@
 
 ### 追加問題 1.
 
+#### マップの作成
+
+'''ruby
+# coding: utf-8
+require 'dxruby'
+
+map = [1, 1, 1, 0, 0, 0, 1, 1, 1, 2, 2, 2, 1, 1, 1]
+
+
+# 座標初期位置
+blocks = Array.new
+
+tile_image = Image.load_tiles('../image/colorbox.png',6,1)
+
+# tile_image[num]をスプライト形式にして、block に追加していく
+# numには map配列の要素(数字)が入る。　課題１１と課題２１を参考に。
+
+## 配列の要素の数だけ繰り返す　という処理は　each でした。（復習）
+## 要素番号も使いたい場合は each_with_index をつかえば可能です（リファレンス自力理解してもらう）
+
+
+Window.loop do
+  Sprite.draw(blocks)
+end
+'''
+
+
 #### ゲームシーンの切り替え
 
 ゲームを起動すると、画面でゲーム開始の画面が表示される、そして、指定したキーを押すと、画面が変わってゲームを始まるように開始画面を付けてください。
