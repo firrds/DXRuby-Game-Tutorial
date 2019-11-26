@@ -82,6 +82,37 @@ if flag == "start"
 
 
 end
+```
+### 追加問題 4.
 
+#### 弾の発射
 
+```ruby
+# coding: utf-8
+require 'dxruby'
+
+image_chara = Image.load_tiles("../character.png",4,4)
+chara = Sprite.new(150, 300, image_chara[0])
+
+image_box = Image.load_tiles("../image/colorbox.png", 6, 1)
+box = Sprite.new(0,-10,image_box[0])
+tama = 0
+
+Window.loop do
+
+        if Input.key_push?(K_SPACE) #Dキー 押したらキャラのy座標に +1
+            if tama == 0
+                box = Sprite.new(chara.x,chara.y,image_box[0])
+            end
+        tama += 1
+        end
+
+        if box.y < 0
+            tama = 0
+        end
+
+    Sprite.draw(chara)
+    Sprite.draw(box)
+
+end
 ```
