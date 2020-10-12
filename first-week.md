@@ -21,7 +21,7 @@ DXRuby をまとめているフォルダに、
 ### DXRubyの導入
 下記にあるリンクをクリックして、zipファイルをダウンロードしてください。
 [DXRuby](https://drive.google.com/file/d/1i7Nu0gScv-OeGfmYT1Vt8JwmVYMRWseM/view?usp=sharing)
-を参照して下さい
+
 
 
 ### Window の作成
