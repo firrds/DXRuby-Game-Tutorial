@@ -21,8 +21,7 @@ DXRuby をまとめているフォルダに、
 ### DXRubyの導入
 下記にあるリンクをクリックして、zipファイルをダウンロードしてください。
 
-[DXRuby](https://drive.google.com/file/d/1i7Nu0gScv-OeGfmYT1Vt8JwmVYMRWseM/view?usp=sharing)
-
+[ダウンロード](https://drive.google.com/file/d/1i7Nu0gScv-OeGfmYT1Vt8JwmVYMRWseM/view?usp=sharing)
 
 
 ### Window の作成
@@ -179,14 +178,14 @@ end
 実際に表示させた Sprite を移動させて見て下さい。
 sample_sprite の増加値を変えると移動速度が変わる事も確認して下さい。
 
-#### 問題 6.
+#### 問題 1.
 
 先程のプログラムでは sprite は画面の右に向かって進んでいますが、
 別途、画面の左に向って移動するプログラムを作成して下さい。
 この時、時間の経過によって画面の外に出て返ってこない状態になる事を
 正常な動作とします。
 
-#### 問題 7.
+#### 問題 2.
 
 問題 6 で作成したプログラムで、
 sprite が画面の左端から外に出ない様にして下さい。
@@ -263,7 +262,7 @@ end
 [DXRuby キーコードリファレンス](http://mirichi.github.io/dxruby-doc/api/constant_keycode.html)
 を参照して下さい。
 
-#### 問題 8.
+#### 問題 3.
 
 矢印キーを使って、
 上下左右に移動出来る様にプログラムを作成して下さい。
@@ -348,7 +347,7 @@ end
 
 ![1](https://user-images.githubusercontent.com/19345982/33853884-ef65fe86-df02-11e7-8248-e7d9f1db4c28.png)
 
-#### 問題 9.
+#### 問題 4.
 
 上記プログラムでは衝突の判定は box に対して右にのみ存在しています。
 その為、
