@@ -19,7 +19,7 @@ DXRuby をまとめているフォルダに、
 これからその使い方について解説を行なっていきます。
 
 ### DXRubyの導入
-下記にあるリンクをクリックして、zipファイルをダウンロードしてください。
+下記リンクをクリックして、zipファイルをダウンロードしてください。
 
 [ダウンロード](https://drive.google.com/file/d/1i7Nu0gScv-OeGfmYT1Vt8JwmVYMRWseM/view?usp=sharing)
 
