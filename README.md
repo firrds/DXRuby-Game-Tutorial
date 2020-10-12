@@ -10,11 +10,6 @@ DXRuby でゲーム作成を勉強する為のもの
 
 を参照して下さい。
 
-## 基礎学習
-
-- [Programming について](./about-programming.md)
-- [Ruby について](./about-ruby.md)
-
 ## 第一週目
 
 - [第一週目内容](./first-week.md)
