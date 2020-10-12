@@ -18,6 +18,12 @@ DXRuby をまとめているフォルダに、
 
 これからその使い方について解説を行なっていきます。
 
+### DXRubyの導入
+下記にあるリンクをクリックして、zipファイルをダウンロードしてください。
+[DXRuby](https://drive.google.com/file/d/1i7Nu0gScv-OeGfmYT1Vt8JwmVYMRWseM/view?usp=sharing)
+を参照して下さい
+
+
 ### Window の作成
 
 Window を作成するだけであれば、
