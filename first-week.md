@@ -25,6 +25,7 @@ DXRuby をまとめているフォルダに、
 
 ### エディタの導入
 プログラムを編集するためのツールであるVisual Studio Codeをインストールしてください。
+
 [公式サイト](https://azure.microsoft.com/ja-jp/products/visual-studio-code/)
 
 
