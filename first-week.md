@@ -18,16 +18,15 @@ DXRuby をまとめているフォルダに、
 
 これからその使い方について解説を行なっていきます。
 
-### DXRubyの導入
-下記リンクをクリックして、zipファイルをダウンロードしてください。
-
-[ダウンロード](https://drive.google.com/file/d/1i7Nu0gScv-OeGfmYT1Vt8JwmVYMRWseM/view?usp=sharing)
-
 ### エディタの導入
 プログラムを編集するためのツールであるVisual Studio Codeをインストールしてください。
 
 [公式サイト](https://azure.microsoft.com/ja-jp/products/visual-studio-code/)
 
+### DXRubyの導入
+下記リンクをクリックして、zipファイルをダウンロードしてください。
+
+[ダウンロード](https://drive.google.com/file/d/1x5thLFrSp2T4F1M87Am6ecGSynuqio2A/view?usp=sharing)
 
 ### Window の作成
 
