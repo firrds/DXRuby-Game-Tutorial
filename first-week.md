@@ -23,6 +23,10 @@ DXRuby をまとめているフォルダに、
 
 [ダウンロード](https://drive.google.com/file/d/1i7Nu0gScv-OeGfmYT1Vt8JwmVYMRWseM/view?usp=sharing)
 
+### エディタの導入
+プログラムを編集するためのツールであるVisual Studio Codeをインストールしてください。
+[公式サイト](https://azure.microsoft.com/ja-jp/products/visual-studio-code/)
+
 
 ### Window の作成
 
