@@ -40,7 +40,7 @@ Map を作成するには、既に習った配列と繰り返しを使用する�
 ```ruby
 require 'dxruby'
 
-image_box = Image.load_tiles("../image/colorbox.png", 6, 1)
+image_box = Image.load_tiles("./image/colorbox.png", 6, 1)
 
 gray1 = Sprite.new(0,0,image_box[5])
 gray2 = Sprite.new(20,0,image_box[5])
@@ -91,7 +91,7 @@ end
 ```
 [1] 情報への準備・・・・配列Aに写真をいれる
 ```ruby
-image_box = Image.load_tiles("../image/colorbox.png", 6, 1)  # 配列A = image_box.load_tiles("写真のファイルの場所",x分割数,y分割数)
+image_box = Image.load_tiles("./image/colorbox.png", 6, 1)  # 配列A = image_box.load_tiles("写真のファイルの場所",x分割数,y分割数)
 ```
 ブロックの写真がそれぞれ入った、image_box[0]～image_box[5]の配列が出来ます。
 これで、写真が入った、配列 image_boxを使うことが出来るようになります。
@@ -144,7 +144,7 @@ block_y = 0
 count = 0
 sprites = []
 
-image_box = Image.load_tiles("../image/colorbox.png", 6, 1) # [1] 配列Aに写真を入れる(情報への準備)
+image_box = Image.load_tiles("./image/colorbox.png", 6, 1) # [1] 配列Aに写真を入れる(情報への準備)
 
 loop do
   sprites[count] = Sprite.new(block_x, block_y, image_box[5])　# [2] 配列Bにx座標、y座標、写真が入った配列Aを入れる(具体的な情報を得る)
@@ -251,7 +251,7 @@ end
 Window.width = 360
 Window.height = 480
 
-image_box = Image.load_tiles("../image/colorbox.png", 6, 1)
+image_box = Image.load_tiles("./image/colorbox.png", 6, 1)
 
 block_x = 0
 block_y = 460
