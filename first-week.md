@@ -274,6 +274,7 @@ end
 
 矢印キーを使って、
 上下左右に移動出来る様にプログラムを作成して下さい。
+[回答](./q3.rb)
 
 ヒント：
 
@@ -296,6 +297,7 @@ end
  sample_sprite.y += 1
  
 ![_ 1](https://user-images.githubusercontent.com/19345982/33780879-b78291a6-dc95-11e7-9370-cb963d267ae9.png)
+
 
 ### 衝突判定
 
@@ -355,7 +357,6 @@ end
 
 ![1](https://user-images.githubusercontent.com/19345982/33853884-ef65fe86-df02-11e7-8248-e7d9f1db4c28.png)
 
-[回答](./q3.rb)
 
 #### 問題 4.
 
