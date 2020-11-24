@@ -293,7 +293,8 @@ end
 その時、キャラクタはブロックより上の位置に登場し
 (ブロックより上で、画面内であればどこでも可)、
 ブロックに衝突するまで下に移動し続ける事を条件とします。
-
+[回答](./q2-4.rb)
+[解説ビデオ](https://drive.google.com/file/d/1oayFqI8YadBUK39en2i5roO0TkHpSuvM/view?usp=sharing)
 
 #### 問題 5.
 
@@ -301,6 +302,9 @@ end
 矢印キーで左右に移動出来る機能を付けて下さい。
 この時、キャラクタが画面の外に出る事について、
 行動を制限する機能を入れる必要はありません。
+[回答](./q2-5.rb)
+[解説ビデオ](https://drive.google.com/file/d/1EJbBOyTA2y2lcDHakSkfanspmUNJ1HkN/view?usp=sharing)
+
 
 
 ### ゲームの要素を加える
