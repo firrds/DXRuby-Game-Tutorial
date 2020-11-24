@@ -9,8 +9,8 @@ image = Image.load_tiles("./character.png", 4, 4)
 
 block_x = 0
 block_y = 460
-item_x = 50
-item_y = 0
+chara_x = 50
+chara_y = 0
 blocks = []
 count = 0
 
@@ -23,13 +23,21 @@ loop do
   block_x = block_x + 20
 end
 
-item = Sprite.new(item_x, item_y, image[0])
+chara = Sprite.new(chara_x, chara_y, image[0])
 
 Window.loop do
-    item.y += 1 
-    if item === blocks
-        item.y -= 1
+  chara.y += 1 
+    if chara === blocks
+      chara.y -= 1
     end
-    Sprite.draw(item)
+    if Input.keyDown?(K_RIGHT)
+        chara.x += 3
+      end
+  
+      if Input.keyDown?(K_LEFT)
+        chara.x -= 3
+      end
+
+    Sprite.draw(chara)
     Sprite.draw(blocks)
 end
