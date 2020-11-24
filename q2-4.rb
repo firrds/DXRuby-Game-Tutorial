@@ -1,7 +1,11 @@
+# coding: utf-8
+require 'dxruby'
+
 Window.width = 360
 Window.height = 480
 
 image_box = Image.load_tiles("./image/colorbox.png", 6, 1)
+image = Image.load_tiles("./character.png", 4, 4)
 
 block_x = 0
 block_y = 460
@@ -19,7 +23,7 @@ loop do
   block_x = block_x + 20
 end
 
-item = Sprite.new(item_x, item_y, image_box[0])
+item = Sprite.new(item_x, item_y, image[0])
 
 Window.loop do
     item.y += 1 
