@@ -1,26 +1,23 @@
 # coding: utf-8
 require 'dxruby'
 
-font = Font.new(32)
-
-
 Window.width = 360
 Window.height = 480
 
 image_box = Image.load_tiles("./image/colorbox.png", 6, 1)
+image = Image.load_tiles("./character.png", 4, 4)
 
 block_x = 0
 block_y = 460
-item_x = 50
+chara_x = 50
+chara_y = 200
+item_x = 130
 item_y = 0
 blocks = []
 count = 0
 item_count = 0
 
-image = Image.load_tiles("./character.png", 4, 4)
-sample_sprite = Sprite.new(60, 60, image[0])
-
-item = Sprite.new(item_x, item_y, image_box[0])
+font = Font.new(32)
 
 loop do
   blocks[count] = Sprite.new(block_x, block_y, image_box[5])
@@ -31,41 +28,37 @@ loop do
   block_x = block_x + 20
 end
 
+chara = Sprite.new(chara_x, chara_y, image[0])
+item = Sprite.new(item_x, item_y, image_box[0])
 
 Window.loop do
-    sample_sprite.y += 1
-    
+   
     if item === blocks
         item.y -= 1
     end
-
-    if sample_sprite === blocks
-        sample_sprite.y -= 1
-    end
     
     if Input.keyDown?(K_RIGHT)
-        sample_sprite.x += 2
+        chara.x += 2
     end
   
     if Input.keyDown?(K_LEFT)
-        sample_sprite.x -= 2
+        chara.x -= 2
     end
 
     if Input.keyDown?(K_DOWN)
-        sample_sprite.y += 2
+        chara.y += 2
+        if chara === blocks
+            chara.y -= 2
+        end
     end
   
     if Input.keyDown?(K_UP)
-        sample_sprite.y -= 2
-    end
-    if item === sample_sprite
-        item = nil
-        item_count += 1
+        chara.y -= 2
     end
 
-    if item.nil? == false
-        item.y += 1
-        Sprite.draw(item)
+    if item === chara
+        item = nil
+        item_count += 1
     end
 
     if item.nil? == true
@@ -73,8 +66,13 @@ Window.loop do
         item = Sprite.new(x, item_y, image_box[0])
     end
 
-    Sprite.draw(blocks)
-    Sprite.draw(sample_sprite)
-    Window.draw_font(100, 100, item_count.to_s, font)
+    if item.nil? == false
+        item.y += 1
+        Sprite.draw(item)
+    end
 
+
+    Sprite.draw(blocks)
+    Sprite.draw(chara)
+    Window.draw_font(10, 10, item_count.to_s, font)
 end
