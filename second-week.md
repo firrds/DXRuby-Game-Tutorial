@@ -196,6 +196,8 @@ Window のサイズを 300x300 px に設定し、
 この時、キャラクタは作成する必要はありません。
 [回答](./q2-2.rb)
 
+[解説ビデオ](https://drive.google.com/file/d/1FgiaZZW8x9QYlEk7PG303R-l_HRjx3vr/view?usp=sharing)
+
 ヒント：
 以下のように図を書いて、ブロックの座標がどう変化しているかをたしかめましょう。
 変化しているデータと変化していないデータがあります。
@@ -245,6 +247,9 @@ end
 なので、Sprite データのみを入れた配列同士、
 もしくは変数と配列の組み合せであればまとめて判定を行なう事が出来ます。
 上手く利用して下さい。
+[回答](./q2-3.rb)
+
+[解説ビデオ](https://drive.google.com/file/d/10Xr1DIeRASHD93LATGp7gqmBET5dbq7T/view?usp=sharing)
 
 
 
