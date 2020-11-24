@@ -30,14 +30,6 @@ Window.loop do
     if chara === blocks
       chara.y -= 1
     end
-    if Input.keyDown?(K_RIGHT)
-        chara.x += 3
-      end
-  
-      if Input.keyDown?(K_LEFT)
-        chara.x -= 3
-      end
-
     Sprite.draw(chara)
     Sprite.draw(blocks)
 end
