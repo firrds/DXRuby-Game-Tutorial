@@ -91,7 +91,7 @@ require 'dxruby'
 x = 0
 y = 0
 
-image = Image.load_tiles("../character.png", 4, 4)
+image = Image.load_tiles("./character.png", 4, 4)
 
 # Sprite.new とはゲーム上でキャラクタを扱う為に使用するメソッドで、
 # このメソッドによって作られたデータを使うことで、
@@ -111,7 +111,7 @@ require 'dxruby'
 x = 0
 y = 0
 
-image = Image.load("../character.png")
+image = Image.load("./character.png")
 sample_sprite = Sprite.new(x, y, image)
 
 Window.loop do
@@ -325,10 +325,10 @@ Sprite データとして ２ つの画像 (オブジェクト) を用意しま�
 
 サンプルコードを実行して衝突する事と確認して下さい。
 ```ruby
-image = Image.load_tiles("../character.png", 4, 4)
+image = Image.load_tiles("./character.png", 4, 4)
 sample_sprite = Sprite.new(200, 200, image[0])
 
-image_box = Image.load_tiles("../image/colorbox.png", 6, 1)
+image_box = Image.load_tiles("./image/colorbox.png", 6, 1)
 box = Sprite.new(400, 200, image_box[0])
 
 Window.loop do
