@@ -25,7 +25,7 @@ Sprite データを画面に表示する時のプログラムを纏める事が�
 これを利用し、
 第一週目の問題 4. で作成したプログラムに存在している Sprite.draw の部分を 1 行に纏めて下さい。
 
-[回答](./q2-1.rb)
+<!-- [回答](./q2-1.rb) -->
 
 
 
@@ -194,8 +194,8 @@ end
 Window のサイズを 300x300 px に設定し、
 画面の上下左右端を全て block で埋める様にプログラムを作成して下さい。
 この時、キャラクタは作成する必要はありません。
-[回答](./q2-2.rb)
-[解説ビデオ](https://drive.google.com/file/d/1FgiaZZW8x9QYlEk7PG303R-l_HRjx3vr/view?usp=sharing)
+<!-- [回答](./q2-2.rb) -->
+<!-- [解説ビデオ](https://drive.google.com/file/d/1FgiaZZW8x9QYlEk7PG303R-l_HRjx3vr/view?usp=sharing) -->
 
 ヒント：
 以下のように図を書いて、ブロックの座標がどう変化しているかをたしかめましょう。
@@ -246,8 +246,8 @@ end
 なので、Sprite データのみを入れた配列同士、
 もしくは変数と配列の組み合せであればまとめて判定を行なう事が出来ます。
 上手く利用して下さい。
-[回答](./q2-3.rb)
-[解説ビデオ](https://drive.google.com/file/d/10Xr1DIeRASHD93LATGp7gqmBET5dbq7T/view?usp=sharing)
+<!-- [回答](./q2-3.rb) -->
+<!-- [解説ビデオ](https://drive.google.com/file/d/10Xr1DIeRASHD93LATGp7gqmBET5dbq7T/view?usp=sharing) -->
 
 
 
@@ -293,8 +293,8 @@ end
 その時、キャラクタはブロックより上の位置に登場し
 (ブロックより上で、画面内であればどこでも可)、
 ブロックに衝突するまで下に移動し続ける事を条件とします。
-[回答](./q2-4.rb)
-[解説ビデオ](https://drive.google.com/file/d/1oayFqI8YadBUK39en2i5roO0TkHpSuvM/view?usp=sharing)
+<!-- [回答](./q2-4.rb) -->
+<!-- [解説ビデオ](https://drive.google.com/file/d/1oayFqI8YadBUK39en2i5roO0TkHpSuvM/view?usp=sharing) -->
 
 #### 問題 5.
 
@@ -302,8 +302,8 @@ end
 矢印キーで左右に移動出来る機能を付けて下さい。
 この時、キャラクタが画面の外に出る事について、
 行動を制限する機能を入れる必要はありません。
-[回答](./q2-5.rb)
-[解説ビデオ](https://drive.google.com/file/d/1EJbBOyTA2y2lcDHakSkfanspmUNJ1HkN/view?usp=sharing)
+<!-- [回答](./q2-5.rb) -->
+<!-- [解説ビデオ](https://drive.google.com/file/d/1EJbBOyTA2y2lcDHakSkfanspmUNJ1HkN/view?usp=sharing) -->
 
 
 
@@ -373,16 +373,16 @@ nil の時は ``true`` を返し、それ以外のデータが入っている時
 
 現状では、item が落ちてくるだけで何も起らないので
 キャラクタが item に触った時に消える用にして下さい。
-[回答](./q2-6.rb)
-[解説ビデオ](https://drive.google.com/file/d/1Lkx6HVoCV3bpIY8l3CjrkAkOuCDY1yPt/view?usp=sharing)
+<!-- [回答](./q2-6.rb) -->
+<!-- [解説ビデオ](https://drive.google.com/file/d/1Lkx6HVoCV3bpIY8l3CjrkAkOuCDY1yPt/view?usp=sharing) -->
 
 #### 問題 7.
 
 itemが消えた後、
 最初にitemが出てきた位置から再度落ちて来る様にして下さい。
 再出現は、キャラクタが item に触って消える限り無限に繰り返して下さい。
-[回答](./q2-7.rb)
-[解説ビデオ](https://drive.google.com/file/d/1UIEEcfFZoyMWamrLf1U_XWMMZxVFhiBx/view?usp=sharing)
+<!-- [回答](./q2-7.rb) -->
+<!-- [解説ビデオ](https://drive.google.com/file/d/1UIEEcfFZoyMWamrLf1U_XWMMZxVFhiBx/view?usp=sharing) -->
 
 ### ブロックの出現場所を制御する
 
@@ -440,8 +440,8 @@ itemのサイズは 20x20 で、画面サイズは 360 を想定している為�
 
 問題 7 で作成したプログラムを
 itemがランダムに出現する様に変更して下さい。
-[回答](./q2-8.rb)
-[解説ビデオ](https://drive.google.com/file/d/1gld2cnVrckaKYk3drGrZGp1LvBqWJb47/view?usp=sharing)
+<!-- [回答](./q2-8.rb) -->
+<!-- [解説ビデオ](https://drive.google.com/file/d/1gld2cnVrckaKYk3drGrZGp1LvBqWJb47/view?usp=sharing) -->
 
 
 ### ゲームにテキストを表示する
@@ -490,8 +490,8 @@ font 変数を使用しています。
 成績の評価方法は、
 キャラクタが落下itemに触った際に 1 点ずつ加算
 する方式で、スコア機能を実装して下さい。
-[回答](./q2-9.rb)
-[解説ビデオ](https://drive.google.com/file/d/1w7jkarxglxYIVrh6NBgKUU9ih_tofqdy/view?usp=sharing)
+<!-- [回答](./q2-9.rb) -->
+<!-- [解説ビデオ](https://drive.google.com/file/d/1w7jkarxglxYIVrh6NBgKUU9ih_tofqdy/view?usp=sharing) -->
 
 
 スコアを表示する為には数値を文字列に変換する必要があります。
@@ -544,8 +544,8 @@ Game Over の様なメッセージと、
 何かボタンを押した時に終了する様にして貰います。
 ゲームが終了した瞬間の画面は表示したままにして下さい。
 条件分岐を上手く使用する事で解決出来ます。
-[回答](./q2-10.rb)
-[解説ビデオ](https://drive.google.com/file/d/1j_-xTUda_L73u5x90HMyrLmJWYwlCODI/view?usp=sharing)
+<!-- [回答](./q2-10.rb) -->
+<!-- [解説ビデオ](https://drive.google.com/file/d/1j_-xTUda_L73u5x90HMyrLmJWYwlCODI/view?usp=sharing) -->
 
 以下ヒント。
 画面に画像や文字を表示するのに使用しているメソッドは、
