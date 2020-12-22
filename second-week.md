@@ -452,6 +452,8 @@ itemのサイズは 20x20 で、画面サイズは 360 を想定している為�
 
 問題 7 で作成したプログラムを
 itemがランダムに出現する様に変更して下さい。
+[回答](./answer/q2-8.rb)
+[解説ビデオ](https://drive.google.com/file/d/1gld2cnVrckaKYk3drGrZGp1LvBqWJb47/view?usp=sharing)
 <!-- [回答](./answer/q2-8.rb) -->
 <!-- [解説ビデオ](https://drive.google.com/file/d/1gld2cnVrckaKYk3drGrZGp1LvBqWJb47/view?usp=sharing) -->
 
@@ -502,6 +504,8 @@ font 変数を使用しています。
 成績の評価方法は、
 キャラクタが落下itemに触った際に 1 点ずつ加算
 する方式で、スコア機能を実装して下さい。
+[回答](./answer/q2-9.rb)
+[解説ビデオ](https://drive.google.com/file/d/1w7jkarxglxYIVrh6NBgKUU9ih_tofqdy/view?usp=sharing)
 <!-- [回答](./answer/q2-9.rb) -->
 <!-- [解説ビデオ](https://drive.google.com/file/d/1w7jkarxglxYIVrh6NBgKUU9ih_tofqdy/view?usp=sharing) -->
 
