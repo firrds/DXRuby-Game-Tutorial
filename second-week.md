@@ -297,6 +297,8 @@ end
 その時、キャラクタはブロックより上の位置に登場し
 (ブロックより上で、画面内であればどこでも可)、
 ブロックに衝突するまで下に移動し続ける事を条件とします。
+[回答](./answer/q2-4.rb)
+[解説ビデオ](https://drive.google.com/file/d/1oayFqI8YadBUK39en2i5roO0TkHpSuvM/view?usp=sharing)
 <!-- [回答](./answer/q2-4.rb) -->
 <!-- [解説ビデオ](https://drive.google.com/file/d/1oayFqI8YadBUK39en2i5roO0TkHpSuvM/view?usp=sharing) -->
 
