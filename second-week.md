@@ -308,6 +308,8 @@ end
 矢印キーで左右に移動出来る機能を付けて下さい。
 この時、キャラクタが画面の外に出る事について、
 行動を制限する機能を入れる必要はありません。
+[回答](./answer/q2-5.rb)
+[解説ビデオ](https://drive.google.com/file/d/1EJbBOyTA2y2lcDHakSkfanspmUNJ1HkN/view?usp=sharing)
 <!-- [回答](./answer/q2-5.rb) -->
 <!-- [解説ビデオ](https://drive.google.com/file/d/1EJbBOyTA2y2lcDHakSkfanspmUNJ1HkN/view?usp=sharing) -->
 
