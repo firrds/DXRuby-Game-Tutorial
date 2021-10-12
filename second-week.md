@@ -504,6 +504,8 @@ font 変数を使用しています。
 成績の評価方法は、
 キャラクタが落下itemに触った際に 1 点ずつ加算
 する方式で、スコア機能を実装して下さい。
+[回答](./answer/q2-9.rb)
+[解説ビデオ](https://drive.google.com/file/d/1w7jkarxglxYIVrh6NBgKUU9ih_tofqdy/view?usp=sharing)
 <!-- [回答](./answer/q2-9.rb) -->
 <!-- [解説ビデオ](https://drive.google.com/file/d/1w7jkarxglxYIVrh6NBgKUU9ih_tofqdy/view?usp=sharing) -->
 
