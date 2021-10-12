@@ -150,7 +150,7 @@ sprites = []
 image_box = Image.load_tiles("./image/colorbox.png", 6, 1) # [1] 配列Aに写真を入れる(情報への準備)
 
 loop do
-  sprites[count] = Sprite.new(block_x, block_y, image_box[5])　# [2] 配列Bにx座標、y座標、写真が入った配列Aを入れる(具体的な情報を得る)
+  sprites[count] = Sprite.new(block_x, block_y, image_box[5]) # [2] 配列Bにx座標、y座標、写真が入った配列Aを入れる(具体的な情報を得る)
   if 180 < block_x
     break
   end
@@ -159,7 +159,7 @@ loop do
 end
 
 Window.loop do
-  Sprite.draw(sprites)　# [3] 配列BをWindowに描く(情報を描く)
+  Sprite.draw(sprites) # [3] 配列BをWindowに描く(情報を描く)
 end
 ```
 
