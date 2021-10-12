@@ -160,7 +160,7 @@ loop do
 end
 
 Window.loop do
-  Sprite.draw(sprites) # [3] 配列BをWindowに描く(情報を描く)
+  Sprite.draw(sprites) # [3] 配列BをWindowに描く(情報を描く)
 end
 ```
 
