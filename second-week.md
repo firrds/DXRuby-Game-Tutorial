@@ -383,7 +383,8 @@ nil の時は ``true`` を返し、それ以外のデータが入っている時
 
 現状では、item が落ちてくるだけで何も起らないので
 キャラクタが item に触った時に消える用にして下さい。
-
+[回答](./answer/q2-6.rb)
+[解説ビデオ](https://drive.google.com/file/d/1Lkx6HVoCV3bpIY8l3CjrkAkOuCDY1yPt/view?usp=sharing)
 <!-- [回答](./answer/q2-6.rb) -->
 <!-- [解説ビデオ](https://drive.google.com/file/d/1Lkx6HVoCV3bpIY8l3CjrkAkOuCDY1yPt/view?usp=sharing) -->
 
