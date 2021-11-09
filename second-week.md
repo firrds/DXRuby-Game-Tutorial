@@ -249,7 +249,8 @@ end
 なので、Sprite データのみを入れた配列同士、
 もしくは変数と配列の組み合せであればまとめて判定を行なう事が出来ます。
 上手く利用して下さい。
-
+[回答](./answer/q2-3.rb)
+[解説ビデオ](https://drive.google.com/file/d/10Xr1DIeRASHD93LATGp7gqmBET5dbq7T/view?usp=sharing)
 <!-- [回答](./answer/q2-3.rb) -->
 <!-- [解説ビデオ](https://drive.google.com/file/d/10Xr1DIeRASHD93LATGp7gqmBET5dbq7T/view?usp=sharing) -->
 
@@ -297,7 +298,8 @@ end
 その時、キャラクタはブロックより上の位置に登場し
 (ブロックより上で、画面内であればどこでも可)、
 ブロックに衝突するまで下に移動し続ける事を条件とします。
-
+[回答](./answer/q2-4.rb)
+[解説ビデオ](https://drive.google.com/file/d/1oayFqI8YadBUK39en2i5roO0TkHpSuvM/view?usp=sharing)
 <!-- [回答](./answer/q2-4.rb) -->
 <!-- [解説ビデオ](https://drive.google.com/file/d/1oayFqI8YadBUK39en2i5roO0TkHpSuvM/view?usp=sharing) -->
 
@@ -307,6 +309,8 @@ end
 矢印キーで左右に移動出来る機能を付けて下さい。
 この時、キャラクタが画面の外に出る事について、
 行動を制限する機能を入れる必要はありません。
+[回答](./answer/q2-5.rb)
+[解説ビデオ](https://drive.google.com/file/d/1EJbBOyTA2y2lcDHakSkfanspmUNJ1HkN/view?usp=sharing)
 
 <!-- [回答](./answer/q2-5.rb) -->
 <!-- [解説ビデオ](https://drive.google.com/file/d/1EJbBOyTA2y2lcDHakSkfanspmUNJ1HkN/view?usp=sharing) -->
