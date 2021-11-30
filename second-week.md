@@ -506,7 +506,8 @@ font 変数を使用しています。
 成績の評価方法は、
 キャラクタが落下itemに触った際に 1 点ずつ加算
 する方式で、スコア機能を実装して下さい。
-
+[回答](./answer/q2-9.rb)
+[解説ビデオ](https://drive.google.com/file/d/1w7jkarxglxYIVrh6NBgKUU9ih_tofqdy/view?usp=sharing)
 <!-- [回答](./answer/q2-9.rb) -->
 <!-- [解説ビデオ](https://drive.google.com/file/d/1w7jkarxglxYIVrh6NBgKUU9ih_tofqdy/view?usp=sharing) -->
 
@@ -561,7 +562,8 @@ Game Over の様なメッセージと、
 何かボタンを押した時に終了する様にして貰います。
 ゲームが終了した瞬間の画面は表示したままにして下さい。
 条件分岐を上手く使用する事で解決出来ます。
-
+[回答](./answer/q2-10.rb)
+[解説ビデオ](https://drive.google.com/file/d/1j_-xTUda_L73u5x90HMyrLmJWYwlCODI/view?usp=sharing)
 <!-- [回答](./answer/q2-10.rb) -->
 <!-- [解説ビデオ](https://drive.google.com/file/d/1j_-xTUda_L73u5x90HMyrLmJWYwlCODI/view?usp=sharing) -->
 
