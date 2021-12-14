@@ -24,7 +24,7 @@ Sprite データを画面に表示する時のプログラムを纏める事が�
 #### 問題 1.
 これを利用し、
 第一週目の問題 4. で作成したプログラムに存在している Sprite.draw の部分を 1 行に纏めて下さい。
-
+[回答](./answer/q2-1.rb) 
 <!-- [回答](./answer/q2-1.rb) -->
 
 
@@ -194,7 +194,8 @@ end
 Window のサイズを 300x300 px に設定し、
 画面の上下左右端を全て block で埋める様にプログラムを作成して下さい。
 この時、キャラクタは作成する必要はありません。
-
+[回答](./answer/q2-2.rb)
+[解説ビデオ](https://drive.google.com/file/d/1FgiaZZW8x9QYlEk7PG303R-l_HRjx3vr/view?usp=sharing)
 
 <!-- [回答](./answer/q2-2.rb)-->
 <!-- [解説ビデオ](https://drive.google.com/file/d/1FgiaZZW8x9QYlEk7PG303R-l_HRjx3vr/view?usp=sharing) -->
@@ -248,7 +249,8 @@ end
 なので、Sprite データのみを入れた配列同士、
 もしくは変数と配列の組み合せであればまとめて判定を行なう事が出来ます。
 上手く利用して下さい。
-
+[回答](./answer/q2-3.rb)
+[解説ビデオ](https://drive.google.com/file/d/10Xr1DIeRASHD93LATGp7gqmBET5dbq7T/view?usp=sharing)
 <!-- [回答](./answer/q2-3.rb) -->
 <!-- [解説ビデオ](https://drive.google.com/file/d/10Xr1DIeRASHD93LATGp7gqmBET5dbq7T/view?usp=sharing) -->
 
