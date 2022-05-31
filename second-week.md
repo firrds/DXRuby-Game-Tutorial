@@ -5,6 +5,7 @@
 最初からデータを入れた状態で宣言する事も出来ます。
 
 ```ruby
+#ここのサンプルは純粋なrubyの書き方です。dxrubyのものではありません。
 foo = "ABC"
 test = "DEF"
 arraytest = [foo,test,"Hello"]
