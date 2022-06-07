@@ -26,7 +26,7 @@ Sprite データを画面に表示する時のプログラムを纏める事が�
 これを利用し、
 第一週目の問題 4. で作成したプログラムに存在している Sprite.draw の部分を 1 行に纏めて下さい。
 
-<!-- [回答](./answer/q2-1.rb) -->
+[回答](./answer/q2-1.rb)
 
 
 
@@ -197,8 +197,8 @@ Window のサイズを 300x300 px に設定し、
 この時、キャラクタは作成する必要はありません。
 
 
-<!-- [回答](./answer/q2-2.rb)-->
-<!-- [解説ビデオ](https://drive.google.com/file/d/1FgiaZZW8x9QYlEk7PG303R-l_HRjx3vr/view?usp=sharing) -->
+[回答](./answer/q2-2.rb)-->
+[解説ビデオ](https://drive.google.com/file/d/1FgiaZZW8x9QYlEk7PG303R-l_HRjx3vr/view?usp=sharing)
 
 ヒント：
 以下のように図を書いて、ブロックの座標がどう変化しているかをたしかめましょう。
