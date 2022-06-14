@@ -20,7 +20,7 @@ DXRuby でゲーム作成を勉強する為のもの
 ## 第二週目
 
 - [第二週目内容](./second-week.md)
-- [DXRuby キーコードリファレンス](http://dxruby.sourceforge.jp/DXRubyReference/2009823193120640.htm)
+- [DXRuby キーコードリファレンス](http://mirichi.github.io/dxruby-doc/api/constant_keycode.html)
 
 ## 第三週目
 
