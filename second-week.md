@@ -381,8 +381,8 @@ nil の時は ``true`` を返し、それ以外のデータが入っている時
 現状では、item が落ちてくるだけで何も起らないので
 キャラクタが item に触った時に消える用にして下さい。
 
-<!-- [回答](./answer/q2-6.rb)
-[解説ビデオ](https://drive.google.com/file/d/1Lkx6HVoCV3bpIY8l3CjrkAkOuCDY1yPt/view?usp=sharing) -->
+[回答](./answer/q2-6.rb)
+[解説ビデオ](https://drive.google.com/file/d/1Lkx6HVoCV3bpIY8l3CjrkAkOuCDY1yPt/view?usp=sharing)
 
 #### 問題 7.
 
@@ -390,8 +390,8 @@ itemが消えた後、
 最初にitemが出てきた位置から再度落ちて来る様にして下さい。
 再出現は、キャラクタが item に触って消える限り無限に繰り返して下さい。
 
-<!-- [回答](./answer/q2-7.rb)
-[解説ビデオ](https://drive.google.com/file/d/1UIEEcfFZoyMWamrLf1U_XWMMZxVFhiBx/view?usp=sharing) -->
+[回答](./answer/q2-7.rb)
+[解説ビデオ](https://drive.google.com/file/d/1UIEEcfFZoyMWamrLf1U_XWMMZxVFhiBx/view?usp=sharing)
 
 ### ブロックの出現場所を制御する
 
@@ -450,8 +450,8 @@ itemのサイズは 20x20 で、画面サイズは 360 を想定している為�
 問題 7 で作成したプログラムを
 itemがランダムに出現する様に変更して下さい。
 
-<!-- [回答](./answer/q2-8.rb)
-[解説ビデオ](https://drive.google.com/file/d/1gld2cnVrckaKYk3drGrZGp1LvBqWJb47/view?usp=sharing) -->
+[回答](./answer/q2-8.rb)
+[解説ビデオ](https://drive.google.com/file/d/1gld2cnVrckaKYk3drGrZGp1LvBqWJb47/view?usp=sharing)
 
 
 ### ゲームにテキストを表示する
