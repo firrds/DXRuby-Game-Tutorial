@@ -26,7 +26,7 @@ Sprite データを画面に表示する時のプログラムを纏める事が�
 これを利用し、
 第一週目の問題 4. で作成したプログラムに存在している Sprite.draw の部分を 1 行に纏めて下さい。
 
-<!-- [回答](./answer/q2-1.rb) -->
+[回答](./answer/q2-1.rb)
 
 
 
@@ -86,7 +86,7 @@ end
 ```ruby
 require 'dxruby'
 
-image_box = Image.load_tiles("../image/colorbox.png", 6, 1) #[1]
+image_box = Image.load_tiles("./image/colorbox.png", 6, 1) #[1]
 
 gray1 = Sprite.new(0,0,image_box[5])                        #[2]
 
