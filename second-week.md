@@ -197,8 +197,8 @@ Window のサイズを 300x300 px に設定し、
 この時、キャラクタは作成する必要はありません。
 
 
-<!-- [回答](./answer/q2-2.rb)
-[解説ビデオ](https://drive.google.com/file/d/1FgiaZZW8x9QYlEk7PG303R-l_HRjx3vr/view?usp=sharing) -->
+[回答](./answer/q2-2.rb)
+[解説ビデオ](https://drive.google.com/file/d/1FgiaZZW8x9QYlEk7PG303R-l_HRjx3vr/view?usp=sharing)
 
 ヒント：
 以下のように図を書いて、ブロックの座標がどう変化しているかをたしかめましょう。
