@@ -250,8 +250,8 @@ end
 もしくは変数と配列の組み合せであればまとめて判定を行なう事が出来ます。
 上手く利用して下さい。
 
-<!-- [回答](./answer/q2-3.rb)
-[解説ビデオ](https://drive.google.com/file/d/10Xr1DIeRASHD93LATGp7gqmBET5dbq7T/view?usp=sharing) -->
+[回答](./answer/q2-3.rb)
+[解説ビデオ](https://drive.google.com/file/d/10Xr1DIeRASHD93LATGp7gqmBET5dbq7T/view?usp=sharing)
 
 
 
@@ -298,8 +298,8 @@ end
 (ブロックより上で、画面内であればどこでも可)、
 ブロックに衝突するまで下に移動し続ける事を条件とします。
 
-<!-- [回答](./answer/q2-4.rb)
-[解説ビデオ](https://drive.google.com/file/d/1oayFqI8YadBUK39en2i5roO0TkHpSuvM/view?usp=sharing) -->
+[回答](./answer/q2-4.rb)
+[解説ビデオ](https://drive.google.com/file/d/1oayFqI8YadBUK39en2i5roO0TkHpSuvM/view?usp=sharing)
 
 #### 問題 5.
 
