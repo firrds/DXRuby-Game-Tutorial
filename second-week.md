@@ -309,8 +309,8 @@ end
 行動を制限する機能を入れる必要はありません。
 
 
-<!-- [回答](./answer/q2-5.rb)
-[解説ビデオ](https://drive.google.com/file/d/1EJbBOyTA2y2lcDHakSkfanspmUNJ1HkN/view?usp=sharing) -->
+[回答](./answer/q2-5.rb)
+[解説ビデオ](https://drive.google.com/file/d/1EJbBOyTA2y2lcDHakSkfanspmUNJ1HkN/view?usp=sharing)
 
 
 
