@@ -265,7 +265,7 @@ end
 Window.width = 360
 Window.height = 480
 
-image_box = Image.load_tiles("./image/colorbox.png", 6, 1)
+image_box = Image.load_tiles("./images/colorbox.png", 6, 1)
 
 block_x = 0
 block_y = 460
