@@ -501,8 +501,8 @@ font 変数を使用しています。
 キャラクタが落下itemに触った際に 1 点ずつ加算
 する方式で、スコア機能を実装して下さい。
 
-<!-- [回答](./answer/q2-9.rb)
-[解説ビデオ](https://drive.google.com/file/d/1w7jkarxglxYIVrh6NBgKUU9ih_tofqdy/view?usp=sharing) -->
+[回答](./answer/q2-9.rb)
+[解説ビデオ](https://drive.google.com/file/d/1w7jkarxglxYIVrh6NBgKUU9ih_tofqdy/view?usp=sharing)
 
 
 スコアを表示する為には数値を文字列に変換する必要があります。
@@ -556,8 +556,8 @@ Game Over の様なメッセージと、
 ゲームが終了した瞬間の画面は表示したままにして下さい。
 条件分岐を上手く使用する事で解決出来ます。
 
-<!-- [回答](./answer/q2-10.rb)
-[解説ビデオ](https://drive.google.com/file/d/1j_-xTUda_L73u5x90HMyrLmJWYwlCODI/view?usp=sharing) -->
+[回答](./answer/q2-10.rb)
+[解説ビデオ](https://drive.google.com/file/d/1j_-xTUda_L73u5x90HMyrLmJWYwlCODI/view?usp=sharing)
 
 以下ヒント。
 画面に画像や文字を表示するのに使用しているメソッドは、
